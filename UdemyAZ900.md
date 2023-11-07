@@ -1,0 +1,226 @@
+# AZ-900: Microsoft Azure Fundamentals Exam Prep - OCT 2023 - Scott Duffy
+
+<!-- TOC -->
+
+- [AZ-900: Microsoft Azure Fundamentals Exam Prep - OCT 2023 - Scott Duffy](#az-900-microsoft-azure-fundamentals-exam-prep---oct-2023---scott-duffy)
+    - [Section 1: AZ-900 Course](#section-1-az-900-course)
+        - [Introduction [1]](#introduction-1)
+        - [LIVE DEMO: A quick look into Azure [2]](#live-demo-a-quick-look-into-azure-2)
+        - [AZ-900 Exam Requirements [3]](#az-900-exam-requirements-3)
+        - [Udemy Video player [4]](#udemy-video-player-4)
+        - [FAQs [5]](#faqs-5)
+    - [Section 2: AZ-900 - Describe Cloud Computing](#section-2-az-900---describe-cloud-computing)
+        - [What is Cloud Computing? [6]](#what-is-cloud-computing-6)
+        - [Shared Responsibility Model [7]](#shared-responsibility-model-7)
+        - [Public Cloud, Private Cloud, Hybrid Cloud [8]](#public-cloud-private-cloud-hybrid-cloud-8)
+        - [Cloud Pricing [9]](#cloud-pricing-9)
+        - [LIVE DEMO: Pricing Calculator [10]](#live-demo-pricing-calculator-10)
+        - [Quiz 1: ## Section 2 Quiz](#quiz-1--section-2-quiz)
+    - [Section 3: AZ-900 - Benefits of Cloud Computing](#section-3-az-900---benefits-of-cloud-computing)
+        - [High Availability Benefit of Cloud Computing [11]](#high-availability-benefit-of-cloud-computing-11)
+        - [Scalability Benefit of Cloud Computing [12]](#scalability-benefit-of-cloud-computing-12)
+        - [Elasticity Benefit of Cloud Computing [13]](#elasticity-benefit-of-cloud-computing-13)
+        - [Reliability Benefit of Cloud Computing [14]](#reliability-benefit-of-cloud-computing-14)
+        - [Predictability Benefit of Cloud Computing [15]](#predictability-benefit-of-cloud-computing-15)
+        - [Security Benefit of Cloud Computing [16]](#security-benefit-of-cloud-computing-16)
+        - [Governance Benefit of Cloud Computing [17]](#governance-benefit-of-cloud-computing-17)
+        - [Managability Benefit of Cloud Computing [18]](#managability-benefit-of-cloud-computing-18)
+        - [Quiz 2: ## Section 3 Quiz](#quiz-2--section-3-quiz)
+    - [Section 4: AZ-900 - Cloud Service Types](#section-4-az-900---cloud-service-types)
+        - [Cloud Service Types [19]](#cloud-service-types-19)
+        - [Serverless [20]](#serverless-20)
+        - [Quiz 3: ## Section 4 Quiz](#quiz-3--section-4-quiz)
+    - [Section 5: AZ-900 - Core Architectural Components of Azure](#section-5-az-900---core-architectural-components-of-azure)
+        - [Regions, Region Pairs, Sovereign Regions [21]](#regions-region-pairs-sovereign-regions-21)
+        - [Availability Zones and Data Centers [22]](#availability-zones-and-data-centers-22)
+        - [Resources and Resource Groups [23]](#resources-and-resource-groups-23)
+        - [Subscriptions [24]](#subscriptions-24)
+        - [Management Groups [25]](#management-groups-25)
+        - [Quiz 4: ## Section 5 Quiz](#quiz-4--section-5-quiz)
+    - [Section 6: AZ-900 - Azure Compute and Networking Services](#section-6-az-900---azure-compute-and-networking-services)
+        - [Azure Compute services [26]](#azure-compute-services-26)
+        - [Azure Functions [27]](#azure-functions-27)
+        - [Azure Networking services [28]](#azure-networking-services-28)
+        - [Network Peering [29]](#network-peering-29)
+        - [Public and Private Endpoints [30]](#public-and-private-endpoints-30)
+        - [Quiz 5: ## Section 6 Quiz](#quiz-5--section-6-quiz)
+    - [Section 7: AZ-900 - Azure Compute Demo](#section-7-az-900---azure-compute-demo)
+        - [LIVE DEMO: Creating a Virtual Machine VM [31]](#live-demo-creating-a-virtual-machine-vm-31)
+        - [LIVE DEMO: Connecting to a Virtual Machine [32]](#live-demo-connecting-to-a-virtual-machine-32)
+        - [LIVE DEMO: Creating Azure App Services / Web Apps [33]](#live-demo-creating-azure-app-services--web-apps-33)
+        - [LIVE DEMO: Azure App Services In Action [34]](#live-demo-azure-app-services-in-action-34)
+        - [LIVE DEMO: Creating Azure Functions [35]](#live-demo-creating-azure-functions-35)
+        - [LIVE DEMO: Kubernetes and Azure Container Instances [36]](#live-demo-kubernetes-and-azure-container-instances-36)
+        - [LIVE DEMO: Azure Container Apps [37]](#live-demo-azure-container-apps-37)
+    - [Section 8: AZ-900 - Azure Storage](#section-8-az-900---azure-storage)
+        - [Overview of Azure Storage [39]](#overview-of-azure-storage-39)
+        - [LIVE DEMO: Create an Unmanaged Storage Account [40]](#live-demo-create-an-unmanaged-storage-account-40)
+        - [LIVE DEMO: Upload Files to a Storage Account [41]](#live-demo-upload-files-to-a-storage-account-41)
+        - [LIVE DEMO: Azure Storage Explorer & Storage Browser [42]](#live-demo-azure-storage-explorer--storage-browser-42)
+        - [AZCOPY [43]](#azcopy-43)
+        - [Azure File Sync [44]](#azure-file-sync-44)
+        - [Azure Migrate [45]](#azure-migrate-45)
+        - [Azure Data Box [46]](#azure-data-box-46)
+        - [Quiz 6: ## Section 8 Quiz](#quiz-6--section-8-quiz)
+    - [Section 9: AZ-900 - Identity, Access and Security](#section-9-az-900---identity-access-and-security)
+        - [Identity and Azure Active Directory [47]](#identity-and-azure-active-directory-47)
+        - [Benefits of Microsoft Entra ID formerly Azure Active Directory Azure AD [48]](#benefits-of-microsoft-entra-id-formerly-azure-active-directory-azure-ad-48)
+        - [Authenication vs Authorization [49]](#authenication-vs-authorization-49)
+        - [Azure AD Conditional Access [50]](#azure-ad-conditional-access-50)
+        - [Multi-Factor Authentication MFA or 2FA [51]](#multi-factor-authentication-mfa-or-2fa-51)
+        - [Passwordless [52]](#passwordless-52)
+        - [Role-Based Access Control RBAC [53]](#role-based-access-control-rbac-53)
+        - [Zero-Trust Model of Security [54]](#zero-trust-model-of-security-54)
+        - [Defense in Depth [55]](#defense-in-depth-55)
+        - [Microsoft Defender for Cloud [56]](#microsoft-defender-for-cloud-56)
+        - [Quiz 7: ## Section 9 Quiz](#quiz-7--section-9-quiz)
+        - [Factors that Affect Cost [57]](#factors-that-affect-cost-57)
+    - [Section 10: AZ-900 - Cost Management in Azure](#section-10-az-900---cost-management-in-azure)
+        - [Azure Pricing Calculator [58]](#azure-pricing-calculator-58)
+        - [Total Cost of Ownership Calculator [59]](#total-cost-of-ownership-calculator-59)
+        - [Azure Cost Management [60]](#azure-cost-management-60)
+        - [Resource Tags [61]](#resource-tags-61)
+        - [Quiz 8: ## Section 10 Quiz](#quiz-8--section-10-quiz)
+    - [Section 11: AZ-900 - Azure Governance and Compliance](#section-11-az-900---azure-governance-and-compliance)
+        - [Azure Governance and Compliance [62]](#azure-governance-and-compliance-62)
+        - [Azure Blueprints [63]](#azure-blueprints-63)
+        - [Azure Policy [64]](#azure-policy-64)
+        - [DEMO: Azure Policy [65]](#demo-azure-policy-65)
+        - [Resource Locks [66]](#resource-locks-66)
+        - [Microsoft Purview [67]](#microsoft-purview-67)
+        - [Quiz 9: ## Section 11 Quiz](#quiz-9--section-11-quiz)
+    - [Section 12: AZ-900 - Tools for Managing and Deploying Azure Resources](#section-12-az-900---tools-for-managing-and-deploying-azure-resources)
+        - [Azure Portal and Command Line Tools [68]](#azure-portal-and-command-line-tools-68)
+        - [LIVE DEMO: Create Resources Using Command Line [69]](#live-demo-create-resources-using-command-line-69)
+        - [Azure Arc [70]](#azure-arc-70)
+        - [Infrastructure as Code IaC [71]](#infrastructure-as-code-iac-71)
+        - [ARM Templates [72]](#arm-templates-72)
+        - [LIVE DEMO: Generate ARM Templates in the Azure Portal [73]](#live-demo-generate-arm-templates-in-the-azure-portal-73)
+        - [Quiz 10: ## Section 12 Quiz](#quiz-10--section-12-quiz)
+    - [Section 13: AZ-900 - Monitoring Tools](#section-13-az-900---monitoring-tools)
+        - [Azure Advisor and Azure Service Health [74]](#azure-advisor-and-azure-service-health-74)
+        - [Azure Diagnostics Settings [75]](#azure-diagnostics-settings-75)
+        - [Azure Monitor [76]](#azure-monitor-76)
+        - [Quiz 11: ## Section 13 Quiz](#quiz-11--section-13-quiz)
+    - [Section 14: 50 QUESTION PRACTICE TEST](#section-14-50-question-practice-test)
+        - [Practice Test 1: 50 QUESTION PRACTICE TEST](#practice-test-1-50-question-practice-test)
+    - [Section 15: AZ-900 - Course Wrapup](#section-15-az-900---course-wrapup)
+        - [Thank You! [77]](#thank-you-77)
+        - [Course Resources - Study Guide, Slides, Audio [78]](#course-resources---study-guide-slides-audio-78)
+        - [Practice Test 2: 50 Question Practice Test](#practice-test-2-50-question-practice-test)
+        - [Bonus: 50+ Hours of Hands-On Azure Practice for AZ-900 [79]](#bonus-50-hours-of-hands-on-azure-practice-for-az-900-79)
+
+<!-- /TOC -->
+
+
+- Practice tests: 2
+- Questions: 100
+- Lectures: 79
+- Video: 7.5 total hours
+
+## Section 1: AZ-900 Course
+### Introduction [1]
+### LIVE DEMO: A quick look into Azure [2]
+### AZ-900 Exam Requirements [3]
+### Udemy Video player [4]
+### FAQs [5]
+## Section 2: AZ-900 - Describe Cloud Computing
+### What is Cloud Computing? [6]
+### Shared Responsibility Model [7]
+### Public Cloud, Private Cloud, Hybrid Cloud [8]
+### Cloud Pricing [9]
+### LIVE DEMO: Pricing Calculator [10]
+###   Quiz 1: ## Section 2 Quiz
+## Section 3: AZ-900 - Benefits of Cloud Computing
+### High Availability Benefit of Cloud Computing [11]
+### Scalability Benefit of Cloud Computing [12]
+### Elasticity Benefit of Cloud Computing [13]
+### Reliability Benefit of Cloud Computing [14]
+### Predictability Benefit of Cloud Computing [15]
+### Security Benefit of Cloud Computing [16]
+### Governance Benefit of Cloud Computing [17]
+### Managability Benefit of Cloud Computing [18]
+### Quiz 2: ## Section 3 Quiz
+## Section 4: AZ-900 - Cloud Service Types
+### Cloud Service Types [19]
+### Serverless [20]
+###   Quiz 3: ## Section 4 Quiz
+## Section 5: AZ-900 - Core Architectural Components of Azure
+### Regions, Region Pairs, Sovereign Regions [21]
+### Availability Zones and Data Centers [22]
+### Resources and Resource Groups [23]
+### Subscriptions [24]
+### Management Groups [25]
+### Quiz 4: ## Section 5 Quiz
+## Section 6: AZ-900 - Azure Compute and Networking Services
+### Azure Compute services [26]
+### Azure Functions [27]
+### Azure Networking services [28]
+### Network Peering [29]
+### Public and Private Endpoints [30]
+### Quiz 5: ## Section 6 Quiz
+## Section 7: AZ-900 - Azure Compute Demo
+### LIVE DEMO: Creating a Virtual Machine (VM) [31]
+### LIVE DEMO: Connecting to a Virtual Machine [32]
+### LIVE DEMO: Creating Azure App Services / Web Apps [33]
+### LIVE DEMO: Azure App Services In Action [34]
+### LIVE DEMO: Creating Azure Functions [35]
+### LIVE DEMO: Kubernetes and Azure Container Instances [36]
+### LIVE DEMO: Azure Container Apps [37]
+## Section 8: AZ-900 - Azure Storage
+### Overview of Azure Storage [39]
+### LIVE DEMO: Create an Unmanaged Storage Account [40]
+### LIVE DEMO: Upload Files to a Storage Account [41]
+### LIVE DEMO: Azure Storage Explorer & Storage Browser [42]
+### AZCOPY [43]
+### Azure File Sync [44]
+### Azure Migrate [45]
+### Azure Data Box [46]
+### Quiz 6: ## Section 8 Quiz
+## Section 9: AZ-900 - Identity, Access and Security
+### Identity and Azure Active Directory [47]
+### Benefits of Microsoft Entra ID (formerly Azure Active Directory (Azure AD)) [48]
+### Authenication vs Authorization [49]
+### Azure AD Conditional Access [50]
+### Multi-Factor Authentication (MFA or 2FA) [51]
+### Passwordless [52]
+### Role-Based Access Control (RBAC) [53]
+### Zero-Trust Model of Security [54]
+### Defense in Depth [55]
+### Microsoft Defender for Cloud [56]
+### Quiz 7: ## Section 9 Quiz
+### Factors that Affect Cost [57]
+## Section 10: AZ-900 - Cost Management in Azure
+### Azure Pricing Calculator [58]
+### Total Cost of Ownership Calculator [59]
+### Azure Cost Management [60]
+### Resource Tags [61]
+### Quiz 8: ## Section 10 Quiz
+## Section 11: AZ-900 - Azure Governance and Compliance
+### Azure Governance and Compliance [62]
+### Azure Blueprints [63]
+### Azure Policy [64]
+### DEMO: Azure Policy [65]
+### Resource Locks [66]
+### Microsoft Purview [67]
+### Quiz 9: ## Section 11 Quiz
+## Section 12: AZ-900 - Tools for Managing and Deploying Azure Resources
+### Azure Portal and Command Line Tools [68]
+### LIVE DEMO: Create Resources Using Command Line [69]
+### Azure Arc [70]
+### Infrastructure as Code (IaC) [71]
+### ARM Templates [72]
+### LIVE DEMO: Generate ARM Templates in the Azure Portal [73]
+### Quiz 10: ## Section 12 Quiz
+## Section 13: AZ-900 - Monitoring Tools
+### Azure Advisor and Azure Service Health [74]
+### Azure Diagnostics Settings [75]
+### Azure Monitor [76]
+### Quiz 11: ## Section 13 Quiz
+## Section 14: 50 QUESTION PRACTICE TEST
+### Practice Test 1: 50 QUESTION PRACTICE TEST
+## Section 15: AZ-900 - Course Wrapup
+### Thank You! [77]
+### Course Resources - Study Guide, Slides, Audio [78]
+### Practice Test 2: 50 Question Practice Test
+### Bonus: 50+ Hours of Hands-On Azure Practice for AZ-900 [79]
