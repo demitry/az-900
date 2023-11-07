@@ -12,6 +12,10 @@
         - [What is Cloud Computing? [6]](#what-is-cloud-computing-6)
         - [Shared Responsibility Model [7]](#shared-responsibility-model-7)
         - [Public Cloud, Private Cloud, Hybrid Cloud [8]](#public-cloud-private-cloud-hybrid-cloud-8)
+            - [Summary](#summary)
+            - [public](#public)
+            - [private](#private)
+            - [hybrid](#hybrid)
         - [Cloud Pricing [9]](#cloud-pricing-9)
         - [LIVE DEMO: Pricing Calculator [10]](#live-demo-pricing-calculator-10)
         - [Quiz 1: ## Section 2 Quiz](#quiz-1--section-2-quiz)
@@ -238,6 +242,33 @@ How MS and you have divided responsibility for security etc.
     - Mixed resp: Auth Platform
 
 ### Public Cloud, Private Cloud, Hybrid Cloud [8]
+
+#### Summary
+
+- private = your resources, your control, flexibility, sca;ability
+- public = cloud provider (Azure) resources, Lower costs, no maintenance, scalability—on-demand, High reliability
+- hybrid - mixed
+
+https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-are-private-public-hybrid-clouds/
+
+#### public
+The cloud resources (like servers and storage) are owned and operated by a third-party cloud service provider and delivered over the internet. With a public cloud, all hardware, software, and other supporting infrastructure are owned and managed by the cloud provider. Microsoft Azure is an example of a public cloud.
+
+- Lower costs—no need to purchase hardware or software, and you pay only for the service you use.
+- No maintenance—your service provider provides the maintenance.
+- Near-unlimited scalability—on-demand resources are available to meet your business needs.
+- High reliability—a vast network of servers ensures against failure.
+
+#### private
+cloud computing resources used exclusively by one business or organization. The private cloud can be physically located at your organization’s on-site datacenter, or it can be hosted by a third-party service provider. But in a private cloud, the services and infrastructure are always maintained on a private network and the hardware and software are dedicated solely to your organization.
+
+- More flexibility — your organization can customize its cloud environment to meet specific business needs.
+- More control — resources are not shared with others, so higher levels of control and privacy are possible.
+- More scalability — private clouds often offer more scalability compared to on-premises infrastructure.
+
+#### hybrid
+combines on-premises infrastructure—or a private cloud—with a public cloud. Hybrid clouds allow data and apps to move between the two environments.
+
 ### Cloud Pricing [9]
 ### LIVE DEMO: Pricing Calculator [10]
 ###   Quiz 1: ## Section 2 Quiz
