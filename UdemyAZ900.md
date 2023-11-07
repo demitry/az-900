@@ -32,6 +32,8 @@ Links:
             - [Vertical Scaling OUT/IN](#vertical-scaling-outin)
             - [Impact on Cost](#impact-on-cost)
         - [Elasticity  - Benefit of Cloud Computing [13]](#elasticity----benefit-of-cloud-computing-13)
+            - [Quickly and Easily](#quickly-and-easily)
+            - [Why?](#why)
         - [Reliability  - Benefit of Cloud Computing [14]](#reliability----benefit-of-cloud-computing-14)
         - [Predictability  - Benefit of Cloud Computing [15]](#predictability----benefit-of-cloud-computing-15)
         - [Security  - Benefit of Cloud Computing [16]](#security----benefit-of-cloud-computing-16)
@@ -447,6 +449,27 @@ What if this is not enough?
 - Be perfectly sized
 
 ### Elasticity  - Benefit of Cloud Computing [13]
+
+- ability **quickly and easily** scale up or down
+
+#### Quickly and Easily
+
+- Involve automation
+- Called "autoscaling" in cloud computing
+- Autoscaling 
+  - Monitors metrics to determine how busy a system is.
+  - Add resources when it exceeds a limit for being busy.
+  - Remove / Shutdown resources when it falls below a limit for being not busy.
+- CPU utilization ?? > 70 // < 30
+
+#### Why?
+
+- More efficient and cost effective
+- Minimize computing "waste"
+- Self-hosted systems tend to have "over-provisioned" resources (You have to over-provision)
+
+Save Here, Spend There
+
 ### Reliability  - Benefit of Cloud Computing [14]
 ### Predictability  - Benefit of Cloud Computing [15]
 ### Security  - Benefit of Cloud Computing [16]
