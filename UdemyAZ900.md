@@ -7,8 +7,7 @@
         - [Introduction [1]](#introduction-1)
         - [LIVE DEMO: A quick look into Azure [2]](#live-demo-a-quick-look-into-azure-2)
         - [AZ-900 Exam Requirements [3]](#az-900-exam-requirements-3)
-        - [Udemy Video player [4]](#udemy-video-player-4)
-        - [FAQs [5]](#faqs-5)
+            - [Important: When exam was updated](#important-when-exam-was-updated)
     - [Section 2: AZ-900 - Describe Cloud Computing](#section-2-az-900---describe-cloud-computing)
         - [What is Cloud Computing? [6]](#what-is-cloud-computing-6)
         - [Shared Responsibility Model [7]](#shared-responsibility-model-7)
@@ -194,8 +193,50 @@ Skills:
 - Describe Azure management and governance (30–35%)
 
 ## Section 2: AZ-900 - Describe Cloud Computing
+
 ### What is Cloud Computing? [6]
+
+Create Resource
+- VM
+- Web app - abstraction above the VM
+- Function App - code for small pieces of code
+- Logic App
+  - connect 2 apps together
+  - event triggers - do something else
+  - chain things together, boxes and lines
+
+Categories
+- AI + ML
+- Translator
+- QnA Maker..Wow!
+- ... Wow!
+
+Type "Marketplace" => additional!!! but not supported by MS
+
 ### Shared Responsibility Model [7]
+
+How MS and you have divided responsibility for security etc.
+
+- On premises - you - All responsibility 
+- Cloud VM Responsibility
+ - MS Azure takes responsibility: 
+    - Building security
+    - Physical network
+    - Physical computer security
+- Cloud AppService Responsibility
+    - Building security
+    - Physical network
+    - Physical computer security
+    - + OS patches
+    - + Shared Responsibility for Network and Firewall settings, App Settings, Auth Platform
+- Cloud SaaS responsibility
+    - Building security
+    - Physical network
+    - Physical computer security
+    - OS patches
+    - Cloud Resp: Network and Firewall settings, App Settings, 
+    - Mixed resp: Auth Platform
+
 ### Public Cloud, Private Cloud, Hybrid Cloud [8]
 ### Cloud Pricing [9]
 ### LIVE DEMO: Pricing Calculator [10]
