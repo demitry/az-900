@@ -28,6 +28,9 @@ Links:
             - [Methods to Mitigate Planned Outages](#methods-to-mitigate-planned-outages)
             - [Methods to Mitigate Unplanned Outages](#methods-to-mitigate-unplanned-outages)
         - [Scalability  - Benefit of Cloud Computing [12]](#scalability----benefit-of-cloud-computing-12)
+            - [Vertical Scaling UP/DOWN](#vertical-scaling-updown)
+            - [Vertical Scaling OUT/IN](#vertical-scaling-outin)
+            - [Impact on Cost](#impact-on-cost)
         - [Elasticity  - Benefit of Cloud Computing [13]](#elasticity----benefit-of-cloud-computing-13)
         - [Reliability  - Benefit of Cloud Computing [14]](#reliability----benefit-of-cloud-computing-14)
         - [Predictability  - Benefit of Cloud Computing [15]](#predictability----benefit-of-cloud-computing-15)
@@ -413,6 +416,35 @@ High Availability - is predetermined designed effort to avoid sources of downtim
 
 ### Scalability  - Benefit of Cloud Computing [12]
 
+Scalability - Ability of the system to accommodate by adding or removing resources resources as needed.
+
+Adapt to Changing users patterns.
+
+Handle traffic without requiring coding ar system design changes.
+
+Does traffic fluctuate?
+
+- based on time or day of the year
+- Black Friday E-commerce web site
+- School registrations in September
+- Tax systems in April
+
+#### Vertical Scaling UP/DOWN
+- Vertical Scaling Up/Down = Add CPU/RAM
+- Problem - upper limit
+- Azure - 96 vCPUs, 384 Gb memory - largest server
+- Does not improve availability
+What if this is not enough?
+
+#### Vertical Scaling OUT/IN
+- Adding more servers
+- No limits to scaling
+- Additional complexity for Load Balancing
+- Can improve Availability
+
+#### Impact on Cost
+- Add or Reduce resources
+- Be perfectly sized
 
 ### Elasticity  - Benefit of Cloud Computing [13]
 ### Reliability  - Benefit of Cloud Computing [14]
