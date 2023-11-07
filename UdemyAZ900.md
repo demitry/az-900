@@ -245,9 +245,9 @@ How MS and you have divided responsibility for security etc.
 
 #### Summary
 
-- private = your resources, your control, flexibility, sca;ability
-- public = cloud provider (Azure) resources, Lower costs, no maintenance, scalability—on-demand, High reliability
-- hybrid - mixed
+- *private* = your resources, your control, flexibility, sca;ability
+- *public* = cloud provider (Azure) resources, Lower costs, no maintenance, scalability—on-demand, High reliability
+- *hybrid* - mixed
 
 https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-are-private-public-hybrid-clouds/
 
@@ -270,6 +270,50 @@ cloud computing resources used exclusively by one business or organization. The 
 combines on-premises infrastructure—or a private cloud—with a public cloud. Hybrid clouds allow data and apps to move between the two environments.
 
 ### Cloud Pricing [9]
+
+predict, min-max, predictability...
+
+Factors Affecting VM Pricing:
+- Geo Location
+- VM, Disk, Size, 
+- Bandwidth, Performance
+- Backup Storage
+- Support Agreement
+- OS SKU / License
+- Reservation Saving Plan
+
+Factors Affecting Cosmos DB Pricing:
+- API Choice
+- Standard Model / Serverless
+- Consumed Storage
+- Backup Storage
+- Region / Regions
+- Number of Operations per Second
+- Optional Dedicated Gateway
+
+100 options...
+
+MS: 55+ free tier services
+
+Some have limits
+
+Pay for time
+- Charge by time used
+- Stop using service - stop the charges
+
+Pay for GB
+- 0,02 per GB per month
+- pay for traffic inbound / outbound  from / to regions or to the internet
+
+Pay for Operations
+- charge per operation
+- Ops: read, write, list, delete
+- Pay per message
+- Pay per query to the DB
+- Cheap Penny/10000
+
+Metrics
+
 ### LIVE DEMO: Pricing Calculator [10]
 ###   Quiz 1: ## Section 2 Quiz
 ## Section 3: AZ-900 - Benefits of Cloud Computing
