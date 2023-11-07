@@ -1,5 +1,7 @@
 # AZ-900: Microsoft Azure Fundamentals Exam Prep - OCT 2023 - Scott Duffy
 
+Links:
+
 <!-- TOC -->
 
 - [AZ-900: Microsoft Azure Fundamentals Exam Prep - OCT 2023 - Scott Duffy](#az-900-microsoft-azure-fundamentals-exam-prep---oct-2023---scott-duffy)
@@ -112,6 +114,13 @@
         - [Course Resources - Study Guide, Slides, Audio [78]](#course-resources---study-guide-slides-audio-78)
         - [Practice Test 2: 50 Question Practice Test](#practice-test-2-50-question-practice-test)
         - [Bonus: 50+ Hours of Hands-On Azure Practice for AZ-900 [79]](#bonus-50-hours-of-hands-on-azure-practice-for-az-900-79)
+
+<!-- /TOC -->
+        - [Course Resources - Study Guide, Slides, Audio [78]](#course-resources---study-guide-slides-audio-78)
+        - [Practice Test 2: 50 Question Practice Test](#practice-test-2-50-question-practice-test)
+        - [Bonus: 50+ Hours of Hands-On Azure Practice for AZ-900 [79]](#bonus-50-hours-of-hands-on-azure-practice-for-az-900-79)
+
+<!-- /TOC -->nus: 50+ Hours of Hands-On Azure Practice for AZ-900 [79]](#bonus-50-hours-of-hands-on-azure-practice-for-az-900-79)
 
 <!-- /TOC -->
 
@@ -315,7 +324,36 @@ Pay for Operations
 Metrics
 
 ### LIVE DEMO: Pricing Calculator [10]
+
+Azure - Pricing - Pricing Calculator
+
+https://azure.microsoft.com/en-us/pricing/calculator/
+
+Save, Export, Share
+
 ###   Quiz 1: ## Section 2 Quiz
+
+Question 1:
+What are the responsibilities of the customers according to the shared responsibility model?
+- Patching guest OS and applications!
+
+(no: fix infrastructure, no physical and env control, no config infrastructure Azure devices)
+
+Question 2:
+In which cloud service model can an organization offload its entire physical hardware responsibilities, potentially allowing it to shut down its on-premises data center?
+
+- public cloud 
+
+An organisation can close its DC by hosting its infrastructure in a public cloud. The public cloud is defined as computing services offered by third-party providers over the public Internet, making them available to anyone who wants to use or purchase them. The private cloud is defined as computing services offered either over the Internet or a private internal network and only to select users instead of the general public. A private cloud can be deployed on-premise or in a third-party hosted environment. A hybrid cloud combines the use of both public and private clouds.
+
+Question 3:
+A company has distributed its workload on both the Azure Cloud and some on-premises servers. What type of architecture is this?
+
+- hybrid cloud
+
+Good job!
+A hybrid cloud is a type of cloud computing that combines on-premises infrastructure—or a private cloud—with a public cloud.
+
 ## Section 3: AZ-900 - Benefits of Cloud Computing
 ### High Availability Benefit of Cloud Computing [11]
 ### Scalability Benefit of Cloud Computing [12]
