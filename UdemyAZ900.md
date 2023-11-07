@@ -22,14 +22,18 @@ Links:
         - [LIVE DEMO: Pricing Calculator [10]](#live-demo-pricing-calculator-10)
         - [Quiz 1: ## Section 2 Quiz](#quiz-1--section-2-quiz)
     - [Section 3: AZ-900 - Benefits of Cloud Computing](#section-3-az-900---benefits-of-cloud-computing)
-        - [High Availability Benefit of Cloud Computing [11]](#high-availability-benefit-of-cloud-computing-11)
-        - [Scalability Benefit of Cloud Computing [12]](#scalability-benefit-of-cloud-computing-12)
-        - [Elasticity Benefit of Cloud Computing [13]](#elasticity-benefit-of-cloud-computing-13)
-        - [Reliability Benefit of Cloud Computing [14]](#reliability-benefit-of-cloud-computing-14)
-        - [Predictability Benefit of Cloud Computing [15]](#predictability-benefit-of-cloud-computing-15)
-        - [Security Benefit of Cloud Computing [16]](#security-benefit-of-cloud-computing-16)
-        - [Governance Benefit of Cloud Computing [17]](#governance-benefit-of-cloud-computing-17)
-        - [Managability Benefit of Cloud Computing [18]](#managability-benefit-of-cloud-computing-18)
+        - [High Availability  - Benefit of Cloud Computing [11]](#high-availability----benefit-of-cloud-computing-11)
+            - [Planned Outages](#planned-outages)
+            - [Unplanned Outages](#unplanned-outages)
+            - [Methods to Mitigate Planned Outages](#methods-to-mitigate-planned-outages)
+            - [Methods to Mitigate Unplanned Outages](#methods-to-mitigate-unplanned-outages)
+        - [Scalability  - Benefit of Cloud Computing [12]](#scalability----benefit-of-cloud-computing-12)
+        - [Elasticity  - Benefit of Cloud Computing [13]](#elasticity----benefit-of-cloud-computing-13)
+        - [Reliability  - Benefit of Cloud Computing [14]](#reliability----benefit-of-cloud-computing-14)
+        - [Predictability  - Benefit of Cloud Computing [15]](#predictability----benefit-of-cloud-computing-15)
+        - [Security  - Benefit of Cloud Computing [16]](#security----benefit-of-cloud-computing-16)
+        - [Governance  - Benefit of Cloud Computing [17]](#governance----benefit-of-cloud-computing-17)
+        - [Managability  - Benefit of Cloud Computing [18]](#managability----benefit-of-cloud-computing-18)
         - [Quiz 2: ## Section 3 Quiz](#quiz-2--section-3-quiz)
     - [Section 4: AZ-900 - Cloud Service Types](#section-4-az-900---cloud-service-types)
         - [Cloud Service Types [19]](#cloud-service-types-19)
@@ -355,14 +359,67 @@ Good job!
 A hybrid cloud is a type of cloud computing that combines on-premises infrastructure—or a private cloud—with a public cloud.
 
 ## Section 3: AZ-900 - Benefits of Cloud Computing
-### High Availability Benefit of Cloud Computing [11]
-### Scalability Benefit of Cloud Computing [12]
-### Elasticity Benefit of Cloud Computing [13]
-### Reliability Benefit of Cloud Computing [14]
-### Predictability Benefit of Cloud Computing [15]
-### Security Benefit of Cloud Computing [16]
-### Governance Benefit of Cloud Computing [17]
-### Managability Benefit of Cloud Computing [18]
+### High Availability  - Benefit of Cloud Computing [11]
+
+High Availability - ability of the system to remain operational during *planned or unplanned outages*.
+
+High Availability - is predetermined designed effort to avoid sources of downtime in planned and unplanned outages.
+
+#### Planned Outages
+- Security Patches
+- Application Updates
+- Hardware replacement
+- Migrating to a new hosting provider
+
+#### Unplanned Outages
+- Hardware failure
+- Network disruptions
+- Power outages
+- Natural disasters (hurricane, earthquakes)
+- Cyber attacks (Human disasters)
+- Software bugs
+- Poor Scaling / architecture design (bootle necks)
+
+#### Methods to Mitigate Planned Outages
+- Gradual deployment strategy
+  - Facebook don't deploy 100 services at once, 1, 10
+  - 1-10-100-etc.
+- Testing and monitoring of deployment
+- Easy rollback plan
+  - Azure Deployment slots
+- Frequent Deployment
+  - Less features - less deployment
+- Automation of deployment
+- DevOps mentality
+
+#### Methods to Mitigate Unplanned Outages
+- Every single core component has redundancy
+  - Higher cost, but handle outage
+- Azure for availability
+  - Availability Sets
+  - Availability Zones
+  - Cross-Region Load Balancing / Front Door
+- Constant real-time Health monitoring / probes
+- Automation
+- String security practices
+- Be geographically distributed
+- Have a disaster recovery plan
+- Test that disaster recovery plan!
+  - fire drills (противопожарные учения)!
+- Need to recover quickly
+- Min downtime
+- Load testing - scaling, autoscaling
+  - How many users can you handle
+
+### Scalability  - Benefit of Cloud Computing [12]
+
+
+### Elasticity  - Benefit of Cloud Computing [13]
+### Reliability  - Benefit of Cloud Computing [14]
+### Predictability  - Benefit of Cloud Computing [15]
+### Security  - Benefit of Cloud Computing [16]
+### Governance  - Benefit of Cloud Computing [17]
+### Managability  - Benefit of Cloud Computing [18]
 ### Quiz 2: ## Section 3 Quiz
 ## Section 4: AZ-900 - Cloud Service Types
 ### Cloud Service Types [19]
