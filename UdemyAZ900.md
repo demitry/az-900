@@ -120,7 +120,54 @@
 
 ## Section 1: AZ-900 Course
 ### Introduction [1]
+
+Foundation
+- Describe concepts
+- Architecture and services
+- Management and governance requirements
+
+Cloud
+- Cloud - just someone else's computer
+- Rent computer resource on demand
+- Resources: Servers, Storage, DBs, MQs, CDNs, Batch Processing Jobs
+- 1000+ Azure Services
+
+Home page
+
+https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/
+
 ### LIVE DEMO: A quick look into Azure [2]
+
+- Region - geo location
+- Availability - redundancy (надлишковість, избыточность)
+- security type
+- OS, architecture
+- VM size DS1_v2
+    - compute optimized or general purpose
+- RDP access
+- open ports
+    - HTTP 80
+    - HTTPS 443
+    - RDP 3389
+- 49% discount with Azure Hybrid Benefit license
+- Virtual Network
+- Delete IP and NIC when VM is deleted
+- Load Balancing
+- Microsoft Defender for Cloud
+  - Thread protection
+- Shutdown time every certain time
+- Recovery service vaults
+- Backup policy
+- Monitoring options
+- Diagnostic options
+- Metadata - contact in case of emergency (e-mail or phone number)
+- Pricing
+- Deploy
+- Deployment Scripts - Programmatically
+
+- 1-2 min to create VM
+- Connect
+
 ### AZ-900 Exam Requirements [3]
 ### Udemy Video player [4]
 ### FAQs [5]
