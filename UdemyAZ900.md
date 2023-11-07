@@ -169,8 +169,30 @@ https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/
 - Connect
 
 ### AZ-900 Exam Requirements [3]
-### Udemy Video player [4]
-### FAQs [5]
+
+https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/
+
+#### Important: When exam was updated
+
+The English language version of this exam was updated on July 31, 2023.
+
+Languages, Ukraine 55 $
+
+Never expired
+
+Book an exam - online or in person
+
+Prep PDF
+
+Study guide for Exam AZ-900: Microsoft Azure Fundamentals
+
+https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900
+
+Skills:
+- Describe cloud concepts (25–30%)
+- Describe Azure architecture and services (35–40%)
+- Describe Azure management and governance (30–35%)
+
 ## Section 2: AZ-900 - Describe Cloud Computing
 ### What is Cloud Computing? [6]
 ### Shared Responsibility Model [7]
