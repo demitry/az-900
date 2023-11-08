@@ -471,6 +471,23 @@ What if this is not enough?
 Save Here, Spend There
 
 ### Reliability  - Benefit of Cloud Computing [14]
+
+High Quality
+- Availability - ability to be accessible and usable by users when they need it
+- Reliability - perform its intended function without interruption
+- Predictability
+
+Reliability - the ability of a system to **perform its intended function without interruption** and with the high degree of accuracy.
+
+- Looses some data sometimes? - Unreliable
+- You have to trust
+
+How to achieve?
+- Auto-scaling
+- Multi-region deployment
+- Data backup and replication
+- Health probes and self-healing
+
 ### Predictability  - Benefit of Cloud Computing [15]
 ### Security  - Benefit of Cloud Computing [16]
 ### Governance  - Benefit of Cloud Computing [17]
