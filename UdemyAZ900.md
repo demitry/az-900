@@ -505,6 +505,31 @@ How to achieve?
 - Pricing calculators
 
 ### Security  - Benefit of Cloud Computing [16]
+
+- Security - Full time job
+- Hackers and cloud providers spend A lot of time, money, effort.
+- Cloud providers go through security audits and international compliance certifications
+- Tools - enable and monitor security
+
+Shared Responsibility Model
+
+**Fundamental challenge**
+
+How to achieve?
+- Compliance certifications
+- Microsoft Security Response Center (MSRC)
+    - looks for Suspicious Traffic in global network
+- Always-on DDoS - additional fee
+- Azure Policy and Blueprint - standards
+- RBAC - Role-based access control
+- Azure Active Directory
+- Up-to-date platform services
+  - Versions and security patches
+- Update management
+- Encryption by default
+- HTTPS, SSL
+- Dozens of security services like firewall
+
 ### Governance  - Benefit of Cloud Computing [17]
 ### Managability  - Benefit of Cloud Computing [18]
 ### Quiz 2: ## Section 3 Quiz
