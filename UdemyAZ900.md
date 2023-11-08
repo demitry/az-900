@@ -42,6 +42,11 @@ Links:
         - [Quiz 2: ## Section 3 Quiz](#quiz-2--section-3-quiz)
     - [Section 4: AZ-900 - Cloud Service Types](#section-4-az-900---cloud-service-types)
         - [Cloud Service Types [19]](#cloud-service-types-19)
+            - [IaaS - Infrastructure](#iaas---infrastructure)
+            - [PaaS - Platform](#paas---platform)
+                - [PaaS - Level](#paas---level)
+                - [PaaS Networking](#paas-networking)
+            - [SaaS - Software](#saas---software)
         - [Serverless [20]](#serverless-20)
         - [Quiz 3: ## Section 4 Quiz](#quiz-3--section-4-quiz)
     - [Section 5: AZ-900 - Core Architectural Components of Azure](#section-5-az-900---core-architectural-components-of-azure)
@@ -601,7 +606,57 @@ A system in the Azure Cloud is designed to withstand the failure of one or more 
 High availability refers to a set of technologies that minimize IT disruptions by providing business continuity of IT services through redundant, fault-tolerant, or failover-protected components.
 
 ## Section 4: AZ-900 - Cloud Service Types
-### Cloud Service Types [19]
+
+### Cloud Service Types [19] IaaS, PaaS, SaaS
+
+- "As a Service" - rent, not buy
+- Commitment options for significant savings
+- Pay for what you use (time, Gb, etc.)
+- Cloud provider takes care of buying
+
+#### IaaS - Infrastructure
+- Computing - VMs, pay by seconds, CPU peed, RAM, optimizations
+- Storage - 5 PB! Blobs, files, queues, tables, bug data - data lake
+- Virtual Networking - virtual networks, subnets, don't cost anything, but ingress and egress bandwidth cost
+
+5Gb egress - free, than pay for traffic between regions
+
+#### PaaS - Platform 
+
+##### PaaS - Level
+
+You don't think on VM and infrastructure level.
+
+- On top of basic infrastructure - software layer
+- Service layer on top of IaaS - computing, storage and networking
+- Middleware, development tools, database server and more.
+
+- One example - **Azure App Service**
+- Simply upload your code and config,
+- **Do not worry about VM underneath**
+- Including Scaling feature, CI/CD, containers, staging and development environments, etc., many-many more
+
+Examples:
+- **Azure App Service**
+- **Manged Storage**
+- **Azure SQL Database**
+
+##### PaaS Networking
+Software apps performing networking tasks:
+- Azure Front Door
+- Load Balancer
+- Firewall
+
+#### SaaS - Software
+
+Typically Apps - like Skype, OneDrive, Dropbox, Google Docs
+
+App is ready to be used,
+
+Simply set it up and use it
+
+Platform - set of features - it does not do anything. But SaaS is an app. 
+
 ### Serverless [20]
 ###   Quiz 3: ## Section 4 Quiz
 ## Section 5: AZ-900 - Core Architectural Components of Azure
