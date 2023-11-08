@@ -489,6 +489,21 @@ How to achieve?
 - Health probes and self-healing
 
 ### Predictability  - Benefit of Cloud Computing [15]
+
+Predictability - ability to forecast (prognose) and control the performance and behavior of a system.
+
+Today? Tomorrow?
+
+Include - predict future costs
+
+How to achieve?
+- Auto-scaling
+- Load balancing
+- Different instance types, sizes, pricing tiers
+- Cost management tools
+- API - automated programming
+- Pricing calculators
+
 ### Security  - Benefit of Cloud Computing [16]
 ### Governance  - Benefit of Cloud Computing [17]
 ### Managability  - Benefit of Cloud Computing [18]
