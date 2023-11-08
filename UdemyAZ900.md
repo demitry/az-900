@@ -38,7 +38,7 @@ Links:
         - [Predictability  - Benefit of Cloud Computing [15]](#predictability----benefit-of-cloud-computing-15)
         - [Security  - Benefit of Cloud Computing [16]](#security----benefit-of-cloud-computing-16)
         - [Governance  - Benefit of Cloud Computing [17]](#governance----benefit-of-cloud-computing-17)
-        - [Managability  - Benefit of Cloud Computing [18]](#managability----benefit-of-cloud-computing-18)
+        - [Manageability  - Benefit of Cloud Computing [18]](#manageability----benefit-of-cloud-computing-18)
         - [Quiz 2: ## Section 3 Quiz](#quiz-2--section-3-quiz)
     - [Section 4: AZ-900 - Cloud Service Types](#section-4-az-900---cloud-service-types)
         - [Cloud Service Types [19]](#cloud-service-types-19)
@@ -553,7 +553,30 @@ How to achieve?
 ```
 Azure Blueprint allows you to ensure across all your subscriptions and all your departments that a certain minimum standards of policies, rules, resource groups and other things are being followed.
 ```
-### Managability  - Benefit of Cloud Computing [18]
+
+### Manageability  - Benefit of Cloud Computing [18]
+
+- M. **of** the cloud
+- M. **in** the cloud
+
+- Templates
+- Automation
+- Scaling
+- Monitoring and alerts
+- Self-healing
+
+In the Cloud
+- Web-portal
+- CLI
+- APIs
+- PowerShell
+
+Why we need it?
+- Easy or Hard to work?
+- Consolidating monitoring and alerting
+- ARM templates, Bicep, Terraform, etc.
+- Autoscaling Up/Down
+
 ### Quiz 2: ## Section 3 Quiz
 ## Section 4: AZ-900 - Cloud Service Types
 ### Cloud Service Types [19]
