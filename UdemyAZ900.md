@@ -531,6 +531,28 @@ How to achieve?
 - Dozens of security services like firewall
 
 ### Governance  - Benefit of Cloud Computing [17]
+
+IT-Governance (Management)
+- How your organization does business
+- Policies, guides cloud operations
+- Followed policies
+- Basic auditing and reporting
+- HIPPA, PCC, GDPR standards
+
+How to achieve?
+
+- Azure Policy and Blueprint
+- Management groups
+- Custom Roles
+- Soft delete for storage accounts
+  - Protect by malicious accidents
+- Guides and best practices
+  - Cloud Adoption Framework
+  - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/get-started/
+
+```
+Azure Blueprint allows you to ensure across all your subscriptions and all your departments that a certain minimum standards of policies, rules, resource groups and other things are being followed.
+```
 ### Managability  - Benefit of Cloud Computing [18]
 ### Quiz 2: ## Section 3 Quiz
 ## Section 4: AZ-900 - Cloud Service Types
