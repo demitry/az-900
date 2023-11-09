@@ -41,14 +41,18 @@ Links:
         - [Manageability  - Benefit of Cloud Computing [18]](#manageability----benefit-of-cloud-computing-18)
         - [Quiz 2: ## Section 3 Quiz](#quiz-2--section-3-quiz)
     - [Section 4: AZ-900 - Cloud Service Types](#section-4-az-900---cloud-service-types)
-        - [Cloud Service Types [19]](#cloud-service-types-19)
+        - [Cloud Service Types [19] IaaS, PaaS, SaaS](#cloud-service-types-19-iaas-paas-saas)
             - [IaaS - Infrastructure](#iaas---infrastructure)
             - [PaaS - Platform](#paas---platform)
                 - [PaaS - Level](#paas---level)
                 - [PaaS Networking](#paas-networking)
             - [SaaS - Software](#saas---software)
         - [Serverless [20]](#serverless-20)
+            - [Azure Serverless Services](#azure-serverless-services)
         - [Quiz 3: ## Section 4 Quiz](#quiz-3--section-4-quiz)
+            - [Question 1](#question-1)
+            - [Question 2](#question-2)
+            - [Question 3](#question-3)
     - [Section 5: AZ-900 - Core Architectural Components of Azure](#section-5-az-900---core-architectural-components-of-azure)
         - [Regions, Region Pairs, Sovereign Regions [21]](#regions-region-pairs-sovereign-regions-21)
         - [Availability Zones and Data Centers [22]](#availability-zones-and-data-centers-22)
@@ -658,7 +662,69 @@ Simply set it up and use it
 Platform - set of features - it does not do anything. But SaaS is an app. 
 
 ### Serverless [20]
+
+- "Serverless" Option - pricing model
+- There are servers, you are not picking servers, CPU, memory
+- Paying for service - not renting HW
+
+Pricing models:
+
+DTU - relative measurement of performance
+
+Purchase Model - vCores
+
+10x2=20 - double performance
+- it has and how much storage you use and you're going to pay.
+- This is a more complicated pricing model
+
+Serverless 
+
+Compute Tier = Serverless
+
+One option - one price
+
+- Paying per CPU second, pricing is 1/100 of a cent per CPU.
+- Dynamic fluctuations
+0 - 0 cost
+So serverless SQL Database can be the cheapest option for databases if you have a very underused database
+
+Cannot predict
+
+#### Azure Serverless Services
+
+- Functions
+- Container Apps
+- Kubernetes
+- SQL Database
+- Cosmos DB
+
+ex: 
+
+Functions - 1 million executions is free, than pay for additional 10000
+
+you can save a lot of money
+
 ###   Quiz 3: ## Section 4 Quiz
+
+#### Question 1
+Which resource is an example of Infrastructure as a Service (IaaS) in Azure?
+  - an Azure VM !
+
+Azure web app, Azure logic app and Azure SQL database are all examples of Platform as a Service (Paas).
+
+#### Question 2
+Which service type is a complete development and deployment environment in the cloud?
+- PaaS !
+PaaS is a complete development and deployment environment in the cloud. 
+PaaS is designed to support the complete web application lifecycle: building, testing, deploying, managing, and updating.
+
+#### Question 3
+Microsoft Office 365 is an example of which service type?
+- SaaS !
+
+Software as a service (SaaS) allows users to connect to and use cloud-based apps over the Internet. 
+Common examples are email, calendaring, and office tools (such as Microsoft Office 365).
+
 ## Section 5: AZ-900 - Core Architectural Components of Azure
 ### Regions, Region Pairs, Sovereign Regions [21]
 ### Availability Zones and Data Centers [22]
