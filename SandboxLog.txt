@@ -1,0 +1,44 @@
+Requesting a Cloud Shell.Succeeded. 
+Connecting terminal...
+
+Welcome to Azure Cloud Shell
+
+Type "az" to use Azure CLI
+Type "help" to learn about Cloud Shell
+
+
+MOTD: SqlServer has been updated to Version 22!
+
+VERBOSE: Authenticating to Azure ...
+VERBOSE: Building your Azure drive ...
+PS /home/dpoluektov> Get-date
+
+Thursday, November 9, 2023 1:05:06 PM
+
+PS /home/dpoluektov> az version                                                                         {                                         
+  "azure-cli": "2.53.1",
+  "azure-cli-core": "2.53.1",
+  "azure-cli-telemetry": "1.1.0",
+  "extensions": {
+    "ai-examples": "0.2.5",
+    "ml": "2.21.1",
+    "ssh": "2.0.2"
+  }
+}
+PS /home/dpoluektov> bash                                                                               
+dpoluektov [ ~ ]$ Get-datebash: Get-date: command not found
+dpoluektov [ ~ ]$ date
+Thu Nov  9 01:06:22 PM UTC 2023
+dpoluektov [ ~ ]$ az upgrade
+This command is in preview and under development. Reference and support levels: https://aka.ms/CLI_refstatus
+You already have the latest azure-cli version: 2.53.1
+Upgrading extensions
+Checking update for ai-examples
+Cannot update system extension ai-examples, please wait until Cloud Shell updates it in the next release.
+Checking update for ml
+Cannot update system extension ml, please wait until Cloud Shell updates it in the next release.
+Checking update for ssh
+Cannot update system extension ssh, please wait until Cloud Shell updates it in the next release.
+Upgrade finished.You can enable auto-upgrade with 'az config set auto-upgrade.enable=yes'. More details in https://docs.microsoft.com/cli/azure/update-azure-cli#automatic-update
+dpoluektov [ ~ ]$ 
+dpoluektov [ ~ ]$ 

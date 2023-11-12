@@ -148,6 +148,16 @@ Links:
 - Lectures: 79
 - Video: 7.5 total hours
 
+1. Microsoft Azure Fundamentals: Describe cloud concepts
+- Define cloud computing.
+- Describe the shared responsibility model.
+- Define cloud models, including public, private, and hybrid.
+- Identify appropriate use cases for each cloud model.
+- Describe the consumption-based model.
+Compare cloud pricing models.
+
+TODO:  Describe the consumption-based model.
+
 ## Section 1: AZ-900 Course
 ### Introduction [1]
 
