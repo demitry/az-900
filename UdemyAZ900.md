@@ -82,7 +82,9 @@ Links:
             - [Deployment Slot](#deployment-slot)
         - [LIVE DEMO: Creating Azure Functions [35]](#live-demo-creating-azure-functions-35)
         - [LIVE DEMO: Kubernetes and Azure Container Instances [36]](#live-demo-kubernetes-and-azure-container-instances-36)
+            - [Summary](#summary)
         - [LIVE DEMO: Azure Container Apps [37]](#live-demo-azure-container-apps-37)
+        - [Delete resources](#delete-resources)
     - [Section 8: AZ-900 - Azure Storage](#section-8-az-900---azure-storage)
         - [Overview of Azure Storage [39]](#overview-of-azure-storage-39)
         - [LIVE DEMO: Create an Unmanaged Storage Account [40]](#live-demo-create-an-unmanaged-storage-account-40)
@@ -961,15 +963,20 @@ public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
 
 ### LIVE DEMO: Kubernetes and Azure Container Instances [36]
 
+#### Summary
+- Container Instances - simplest, demo
+- Container App - middle area between enterprise grade complexity and demo application, simple scaling
+- Azure Kubernetes Service (AKS) - enterpriise complexity
+
 Container 
 - Running in functions, 
 - In VM (docker)
 - Web Apps
 - Service Fabric...
 
-- Azure Kubernetes Service (AKS) orchestration
-
-- Container Instances - simplest, quickest,  smalest way to deploy a container.
+1) Azure Kubernetes Service (AKS) orchestration
+3) Container App (next section)
+2) Container Instances - simplest, quickest,  smalest way to deploy a container.
   - Testing or demo something.
   - It is not about scalability
   - Image source
@@ -983,6 +990,25 @@ Container
 Events - Activity review
 
 ### LIVE DEMO: Azure Container Apps [37]
+
+3) Container App
+Create - Container Apps Environments
+
+More Functional than a container Instances
+- Scaling.. Similar as with Web Apps
+
+- Scales and replicas
+- Min - Max 0-10
+- Rules for Scaling - similar to web apps
+
+So it's that middle area between enterprise grade complexity and demo application.
+
+### Delete resources
+
+Simple - delete resource group.
+
+Some complexity with storage accounts with "soft delete" option.
+
 ## Section 8: AZ-900 - Azure Storage
 ### Overview of Azure Storage [39]
 ### LIVE DEMO: Create an Unmanaged Storage Account [40]
