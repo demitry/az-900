@@ -960,6 +960,28 @@ public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
 ```
 
 ### LIVE DEMO: Kubernetes and Azure Container Instances [36]
+
+Container 
+- Running in functions, 
+- In VM (docker)
+- Web Apps
+- Service Fabric...
+
+- Azure Kubernetes Service (AKS) orchestration
+
+- Container Instances - simplest, quickest,  smalest way to deploy a container.
+  - Testing or demo something.
+  - It is not about scalability
+  - Image source
+    - Quick Start images - 3 imagest Simple Win or Linux
+    - Or Azure Container Registry
+    - Or Other registry (docker hub...)
+
+- Networking: Public, Private, None
+- Restart Policy: On Failure.
+
+Events - Activity review
+
 ### LIVE DEMO: Azure Container Apps [37]
 ## Section 8: AZ-900 - Azure Storage
 ### Overview of Azure Storage [39]
