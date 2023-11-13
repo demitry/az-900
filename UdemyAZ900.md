@@ -895,6 +895,70 @@ WebApp - higher level (PaaS)
 - A/B tests traffic %, 10% - A, 90% - B
 
 ### LIVE DEMO: Creating Azure Functions [35]
+
+- _unique_name_.azurewebsites.com
+- Code or Container Image
+- 6 built-in: .NET, Node.js, Python, Java, PowerShell Core, Custom Habdler
+  - Custom Habdler - PHP handler dll
+- Version, Region, OS
+- Hosting Plan
+  - Consumption (Serverless)
+    - optimized for serverless and event-driven workloads, cheap
+  - Functions Premium
+    - Event based scaling
+    - network isolation
+  - App Service Plan
+    - for large SKUs, co-locate Web-Apps and functions
+
+- Need storage account
+- Enable public access
+- Github - continious deployment
+- Can Write it in a portal
+
+HTTP Trigger
+Timer Trigger
+Queue Storage trigger...
+....
+
+https://github.com/Azure/azure-functions-templates
+
+
+Auth Level
+- Function
+- Anonymous
+- Admin
+
+
+Azure Functions C# script (.csx) developer reference
+
+https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp?tabs=functionsv2%2Cfixed-delay%2Cazure-cli#http-trigger
+
+```cs
+#r "Newtonsoft.Json"
+
+using System.Net;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Primitives;
+using Newtonsoft.Json;
+
+public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
+{
+    log.LogInformation("C# HTTP trigger function processed a request.");
+
+    string name = req.Query["name"];
+
+    string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+    dynamic data = JsonConvert.DeserializeObject(requestBody);
+    name = name ?? data?.name;
+
+    string responseMessage = string.IsNullOrEmpty(name)
+        ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                : $"Hello, {name}. This HTTP triggered function executed successfully.";
+
+            return new OkObjectResult(responseMessage);
+}
+```
+
 ### LIVE DEMO: Kubernetes and Azure Container Instances [36]
 ### LIVE DEMO: Azure Container Apps [37]
 ## Section 8: AZ-900 - Azure Storage
