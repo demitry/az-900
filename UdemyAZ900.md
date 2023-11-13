@@ -65,6 +65,8 @@ Links:
         - [Azure Functions [27]](#azure-functions-27)
         - [Azure Networking services [28]](#azure-networking-services-28)
         - [Network Peering [29]](#network-peering-29)
+            - [Address range](#address-range)
+            - [virtual networks: how to connect?](#virtual-networks-how-to-connect)
         - [Public and Private Endpoints [30]](#public-and-private-endpoints-30)
         - [Quiz 5: ## Section 6 Quiz](#quiz-5--section-6-quiz)
     - [Section 7: AZ-900 - Azure Compute Demo](#section-7-az-900---azure-compute-demo)
@@ -134,15 +136,6 @@ Links:
         - [Bonus: 50+ Hours of Hands-On Azure Practice for AZ-900 [79]](#bonus-50-hours-of-hands-on-azure-practice-for-az-900-79)
 
 <!-- /TOC -->
-        - [Course Resources - Study Guide, Slides, Audio [78]](#course-resources---study-guide-slides-audio-78)
-        - [Practice Test 2: 50 Question Practice Test](#practice-test-2-50-question-practice-test)
-        - [Bonus: 50+ Hours of Hands-On Azure Practice for AZ-900 [79]](#bonus-50-hours-of-hands-on-azure-practice-for-az-900-79)
-
-<!-- /TOC -->nus: 50+ Hours of Hands-On Azure Practice for AZ-900 [79]](#bonus-50-hours-of-hands-on-azure-practice-for-az-900-79)
-
-<!-- /TOC -->
-
-
 - Practice tests: 2
 - Questions: 100
 - Lectures: 79
@@ -747,6 +740,40 @@ Common examples are email, calendaring, and office tools (such as Microsoft Offi
 ### Azure Functions [27]
 ### Azure Networking services [28]
 ### Network Peering [29]
+
+#### Address range
+
+Virtual network:
+10.0.0.0/16 - 65000
+
+Each network divided into subnets
+
+The IP address range 10.0.0.0/16 includes 65,536 addresses. This range starts from 10.0.0.0 and ends at 10.0.255.255. In IPv4 addresses, each octet can have values from 0 to 255 (inclusive), and since we have two octets for hosts (10.0.x.x), the total number of possible combinations is 256 * 256 = 65,536 addresses.
+
+```
+
+Диапазон IP-адресов 10.0.0.0/16 включает в себя 65,536 адресов. Этот диапазон начинается с 10.0.0.0 и заканчивается на 10.0.255.255. В адресах IPv4 каждый октет может принимать значения от 0 до 255 (включительно), и поскольку у нас есть два октета для хостов (10.0.x.x), то количество возможных комбинаций будет 256 * 256 = 65,536 адресов.
+
+Обозначение "/16" в записи IP-адреса представляет собой CIDR (Classless Inter-Domain Routing) нотацию, которая указывает на длину префикса подсети. В данном случае "/16" означает, что первые 16 бит IP-адреса зарезервированы для сетевой части (сетевой адрес), а оставшиеся 32 - 16 = 16 бит предназначены для адресации устройств внутри этой сети (хостов).
+
+В контексте диапазона IP-адресов 10.0.0.0/16, это означает, что первые два октета (10.0) предназначены для идентификации сети, а оставшиеся два октета могут использоваться для адресации устройств внутри этой сети. Количество доступных адресов для устройств равно 2^16, что равно 65,536.
+
+```
+
+#### 2 virtual networks: how to connect?
+- not allowed by default, blocked
+- connect - peering
+
+vnetdemo1 | Peerings
+- 1 or 2-way traffic
+- Add peering vnet1-to-vnet2
+- Remote virtual network
+  - Reverse: vnet2-to-vnet1 (will create a peering in vnet2)
+- Add
+
+Any Db from vnet1 - will access vnet2
+10.0.0 talk to 10.0.1 network
+
 ### Public and Private Endpoints [30]
 ### Quiz 5: ## Section 6 Quiz
 ## Section 7: AZ-900 - Azure Compute Demo
