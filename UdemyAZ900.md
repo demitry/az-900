@@ -68,7 +68,10 @@ Links:
             - [Address range](#address-range)
             - [virtual networks: how to connect?](#virtual-networks-how-to-connect)
         - [Public and Private Endpoints [30]](#public-and-private-endpoints-30)
-        - [Quiz 5: ## Section 6 Quiz](#quiz-5--section-6-quiz)
+        - [Quiz 5: Section 6 Quiz](#quiz-5-section-6-quiz)
+            - [Question 1:](#question-1)
+            - [Question 2:](#question-2)
+            - [Question 3:](#question-3)
     - [Section 7: AZ-900 - Azure Compute Demo](#section-7-az-900---azure-compute-demo)
         - [LIVE DEMO: Creating a Virtual Machine VM [31]](#live-demo-creating-a-virtual-machine-vm-31)
         - [LIVE DEMO: Connecting to a Virtual Machine [32]](#live-demo-connecting-to-a-virtual-machine-32)
@@ -775,7 +778,36 @@ Any Db from vnet1 - will access vnet2
 10.0.0 talk to 10.0.1 network
 
 ### Public and Private Endpoints [30]
-### Quiz 5: ## Section 6 Quiz
+
+Who can access the resource and how?
+
+- Enable public IP - this is a door
+- Enable bublic access from selected virtual network and IP addresses
+  - need Subnet storage account
+- Disable public access and use private access
+  - Add private endpoint (on other side)
+
+### Quiz 5: Section 6 Quiz
+
+#### Question 1:
+Which Azure service provides serverless computing?
+- Azure Functions
+Good job!
+Azure Functions is a serverless computer service that allows a piece of code to be deployed and executed without needing server infrastructure or any configurations.
+
+#### Question 2:
+Which Azure service provides network traffic filtering across multiple subscriptions and virtual networks?
+- Azure Firewall
+You can restrict traffic to multiple virtual networks in multiple subscriptions with a single Azure firewall. Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It’s a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. Reference: https://learn.microsoft.com/en-us/azure/firewall/overview
+
+https://learn.microsoft.com/en-us/azure/firewall/overview
+
+#### Question 3:
+An organization plans to migrate all its data and resources to Azure. The organization’s migration plan states that only Platform-as-a-Service (PaaS) solutions be used in Azure. Which Azure service should be used?
+- Azure App Service
+Azure App Service is a fully managed PaaS (Platform as a Service) service for developers. Reference: https://learn.microsoft.com/en-us/azure/app-service/overview
+
+
 ## Section 7: AZ-900 - Azure Compute Demo
 ### LIVE DEMO: Creating a Virtual Machine (VM) [31]
 ### LIVE DEMO: Connecting to a Virtual Machine [32]
