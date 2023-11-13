@@ -79,6 +79,7 @@ Links:
             - [Server Manager - machine config](#server-manager---machine-config)
         - [LIVE DEMO: Creating Azure App Services / Web Apps [33]](#live-demo-creating-azure-app-services--web-apps-33)
         - [LIVE DEMO: Azure App Services In Action [34]](#live-demo-azure-app-services-in-action-34)
+            - [Deployment Slot](#deployment-slot)
         - [LIVE DEMO: Creating Azure Functions [35]](#live-demo-creating-azure-functions-35)
         - [LIVE DEMO: Kubernetes and Azure Container Instances [36]](#live-demo-kubernetes-and-azure-container-instances-36)
         - [LIVE DEMO: Azure Container Apps [37]](#live-demo-azure-container-apps-37)
@@ -857,7 +858,42 @@ Portal:
 - Browser - VMs Public IP
 
 ### LIVE DEMO: Creating Azure App Services / Web Apps [33]
+
+WebApp - higher level (PaaS)
+- deploy code and config into Azure
+- _name_.azurewebsites.net
+- Choose Runtime stack
+- Publish
+  - Code
+  - Docker container
+  - Static Web App
+- OS: Windows or Linux
+- Region
+- Pricing: Windows Plan or new app service plan
+  - Or Select App Service Plan for Dev or Prod
+  - Basic B1
+- ACU = Azure Compute Units - performance попугаи
+- Redundancy in Premium options (not Basic or Standard)
+- Gitgub Actions
+- Enable public access / or specific virtual network
+- Create
+
 ### LIVE DEMO: Azure App Services In Action [34]
+
+- WebApp - Abstraction over the VM
+- No control on VM, no RDP option ...
+- Settings
+  - Scale Up/Down (switch from B1 to S1 Standard S1 plan)
+  - Scaling - Manual / Autoscaling - Rules Based
+  - Autoscaling settings
+    - Scale based on metrics (CPU > 70 => Up, < 20 => Down)
+- Console - C drive
+  - C:\home\site\wwwroot> dir or ls -ls
+
+#### Deployment Slot
+- Prod or Stage, Swap slots
+- A/B tests traffic %, 10% - A, 90% - B
+
 ### LIVE DEMO: Creating Azure Functions [35]
 ### LIVE DEMO: Kubernetes and Azure Container Instances [36]
 ### LIVE DEMO: Azure Container Apps [37]
