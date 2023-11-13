@@ -75,6 +75,8 @@ Links:
     - [Section 7: AZ-900 - Azure Compute Demo](#section-7-az-900---azure-compute-demo)
         - [LIVE DEMO: Creating a Virtual Machine VM [31]](#live-demo-creating-a-virtual-machine-vm-31)
         - [LIVE DEMO: Connecting to a Virtual Machine [32]](#live-demo-connecting-to-a-virtual-machine-32)
+            - [Run machine](#run-machine)
+            - [Server Manager - machine config](#server-manager---machine-config)
         - [LIVE DEMO: Creating Azure App Services / Web Apps [33]](#live-demo-creating-azure-app-services--web-apps-33)
         - [LIVE DEMO: Azure App Services In Action [34]](#live-demo-azure-app-services-in-action-34)
         - [LIVE DEMO: Creating Azure Functions [35]](#live-demo-creating-azure-functions-35)
@@ -809,8 +811,51 @@ Azure App Service is a fully managed PaaS (Platform as a Service) service for de
 
 
 ## Section 7: AZ-900 - Azure Compute Demo
+
+Gear - change settings
+
 ### LIVE DEMO: Creating a Virtual Machine (VM) [31]
+
+- Compute category
+- Tabs
+- Linux - the most popular
+- Resource group, region, unique name
+- Region - choose closest to consumer
+- Availability options 
+  - there is no LB
+  - Availability zones - multiple VMs for redundancy
+- Hundreds of images, 
+  - Sql Server 2022 on Windows Server (preinstalled with license)
+  - Developer machine with Visual Studio
+  - CentOS
+- Instance types (RAM, CPU,...) - filter Size
+- Admin Account
+- Open ports: HTTP 80, HTTPS 443, RDP 3389
+... 32 seconds
+
 ### LIVE DEMO: Connecting to a Virtual Machine [32]
+
+#### Run machine
+- Public IP assigned
+- Not able to connect by default - Networking (check RDP port)
+- Test Connect, Native RDP, Download RDP file
+- Trust this machine, Connect, More Choices, creds.
+- Remote Certificate is Vsalid:  yes
+
+#### Server Manager - machine config
+
+VM:
+- For Web Server - Add roles
+- Role-based or feature based installation
+- Server roles - [x] Web Server (IIS) role
+- Install
+- Browser: localhost (80) - default page
+
+Portal:
+- Size: can Resize
+
+- Browser - VMs Public IP
+
 ### LIVE DEMO: Creating Azure App Services / Web Apps [33]
 ### LIVE DEMO: Azure App Services In Action [34]
 ### LIVE DEMO: Creating Azure Functions [35]
