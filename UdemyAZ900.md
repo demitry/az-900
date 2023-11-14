@@ -1011,7 +1011,38 @@ Some complexity with storage accounts with "soft delete" option.
 
 ## Section 8: AZ-900 - Azure Storage
 ### Overview of Azure Storage [39]
+
+- Container (Blob) Storage
+- Disk Storage
+- File Storage
+- Storage Tiers - different options for storage
+
+- Functions require storage account
+- General purpose v2 (gpv2) account - the most common
+- Azure Data Lake Storage Gen2 - huge storage for big data, Petabytes
+- Pay per GB 1.8 cents per GB
+- Cold and Hot - storage
+- BLOB - Binary Large OBject, just a file
+- A collection of binary data in a form of file or data in DB - stored in a storage account
+- In AWS - a Storage account is called Simple Storage Service (S3)
+
+Many options
+- Access tiers - Hot, Cool, Cold, Archive
+- Performance Tiers - Standard and Premium
+- Location
+- Redundancy / Replication
+- Failower options - use backup
+
+Disk Storage
+- Azure VM Disks
+- **Managed Disks**
+  - in an unmanaged storage account you're paying by the gigabyte
+  - with managed (by Azure) disk, they have tiers and you're reserving capacity in advance.
+
 ### LIVE DEMO: Create an Unmanaged Storage Account [40]
+
+
+
 ### LIVE DEMO: Upload Files to a Storage Account [41]
 ### LIVE DEMO: Azure Storage Explorer & Storage Browser [42]
 ### AZCOPY [43]
