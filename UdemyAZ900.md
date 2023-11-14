@@ -1041,7 +1041,52 @@ Disk Storage
 
 ### LIVE DEMO: Create an Unmanaged Storage Account [40]
 
+- The name must be unique across all existing storage account names in Azure.
+- Region -> cost is different
+- Premium - a lot faster.
+BLOB block size  - let's say it's 32 megabytes.
+=> Blockings
 
+Redundancy
+
+- ZRS - Zone redundant storage - 3 copies of your file in each datacenter
+- LRS - Locally - redundant storage - no zonal redundancy
+- GRS - Geo - redundant storage - choose regions
+- GZRS - Geo-zone-redundant storage
+
+Enable storage account access keys
+
+Data Lake - more storage for big data
+
+Access Tier (important)
+- Hot: (Default) access - frequently accessed, day-by-day usege scenarios, pay per access
+- Cool: Infrequently accesses data and access scenarios
+  - Price = Price / 2, save 50 %
+- Archieve - save 90 %, hours to access, backups
+
+Enable file share (SMTP protocol)
+
+Public access with the security key
+
+Door is closed with the key
+
+Networking Routing:
+- Microsoft network routing
+- Internet routing
+
+Soft deleteing
+
+Versioning
+
+Immutability - file cannot be changed
+- may have some legal implications, log files, emails,...
+- where you don't want someone to be able to delete it.
+
+Encryption type:
+- MMK - Microsoft Management Keys
+- CMK - Customer Management Keys
+
++ Additional level encryption - Enable infrastructure level encryption
 
 ### LIVE DEMO: Upload Files to a Storage Account [41]
 ### LIVE DEMO: Azure Storage Explorer & Storage Browser [42]
