@@ -1107,7 +1107,7 @@ Container - Bucket to store
   - Upload, get URL
   - Need security key to access
     - Storage Account | Access Keys, get storage key, to have **admin control on storage account**
-    - Containers - file - ... - Generate SAS - Shared Access Signature - Key, Read permissions
+    - Containers - file - ... - Generate SAS - Shared Access Signature - Key, Read permissions, Expiry Date
   - Generate SAS token and URL - so **can access file**.
   - Door is locked need a key
 - Geo replication
@@ -1118,7 +1118,34 @@ Add rule
 - Save money
 
 ### LIVE DEMO: Azure Storage Explorer & Storage Browser [42]
+
+Applications - reading and writing
+
+You could use Azure functions that listen for an event and create a file and stores that file in the storage account.
+
+- Open in Explorer
+- Storage Browser (preview) - NOT for PROD!
+
+Switch to Storage Explorer (in portal)
+
 ### AZCOPY [43]
+
+https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10
+
+- How to copy data between blob containers?
+- Download and upload? No!
+- Copy Inside the Azure network
+- Download AzCopy or use it in Cloud Shell
+- Source - Generate SAS - Read
+- Destination - Generate SAS - Write permission
+- Copy accross subscription into the second container
+
+```
+azcopy -?
+
+azcopy copy 'source_url' 'destination'
+```
+
 ### Azure File Sync [44]
 ### Azure Migrate [45]
 ### Azure Data Box [46]
