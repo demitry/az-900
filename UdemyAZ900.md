@@ -1173,6 +1173,25 @@ Storage account
 - allow files to be synchronized from your file share running within your company and the storage account
 
 ### Azure Migrate [45]
+
+Tool for migrating into the Azure
+
+Explore your evvironments, servers and databases
+
+Mapping tools
+
+Make plans to migrate then int Azure
+
+Costing then out
+
+Which servers can be migrated as-is and which need upgrades?
+
+https://learn.microsoft.com/en-us/azure/migrate/
+
+Tutorial: Discover physical servers with Azure Migrate: Discovery and assessment
+
+https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-physical
+
 ### Azure Data Box [46]
 ### Quiz 6: ## Section 8 Quiz
 ## Section 9: AZ-900 - Identity, Access and Security
