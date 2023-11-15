@@ -1193,6 +1193,28 @@ Tutorial: Discover physical servers with Azure Migrate: Discovery and assessment
 https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-physical
 
 ### Azure Data Box [46]
+
+Pass 500 Terabytes into Azure?
+
+Speed Test - Upload Speed!
+
+Estimate - in Days? Weeks?
+
+Phisical Devices 
+- hard disks shipped to office,
+- Copy 
+- and ship back to Azure
+
+HDD - 100 TB, 8 TB, 1 PB
+
+Encrypted on device
+
+And so Azure Stack has an edge device that you can install in your data center, which is a Microsoft piece of hardware.
+Which helps you do cloud stuff in your own data center.
+And also there can be a virtual data box, which is much like a virtual machine that has a particular agent on it.
+So there are online ways of getting your data into the cloud.
+But if you don't have a speed problem, you can use one of these virtualized products or the Azure Stack
+
 ### Quiz 6: ## Section 8 Quiz
 ## Section 9: AZ-900 - Identity, Access and Security
 ### Identity and Azure Active Directory [47]
