@@ -1147,6 +1147,31 @@ azcopy copy 'source_url' 'destination'
 ```
 
 ### Azure File Sync [44]
+
+https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-extend-servers
+
+File Share
+
+File Server and file share in the cloud
+
+SMB protocol - mount file shares (Linux and Windows)
+
+Storage account
+- SMB 3.1.1 protocol
+- NTLM v2 authentication
+- AES-12B-GCM encryption
+
+4 components:
+1) Storage Account
+2) Storage Sync Service in Azure
+3) Azure File Sync agent
+4) Local file server
+
+- create the Storage Sync service in the same region as your file server
+- create sync groups contain endpoints on the on your company side
+- install the file sync agent software within your organization
+- allow files to be synchronized from your file share running within your company and the storage account
+
 ### Azure Migrate [45]
 ### Azure Data Box [46]
 ### Quiz 6: ## Section 8 Quiz
