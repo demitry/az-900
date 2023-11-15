@@ -1089,6 +1089,34 @@ Encryption type:
 + Additional level encryption - Enable infrastructure level encryption
 
 ### LIVE DEMO: Upload Files to a Storage Account [41]
+
+Stotage account contains 4 types of data.
+
+It's completely separate.
+
+- Containers
+- File shares
+- Queues - 1 write, 2 read
+- Tables - cheap but not as reliable as a Cosmos DB.
+
+Container - Bucket to store
+
+- Container - Bucket to store
+  - private or public
+  - Upload blobTier
+  - Upload, get URL
+  - Need security key to access
+    - Storage Account | Access Keys, get storage key, to have **admin control on storage account**
+    - Containers - file - ... - Generate SAS - Shared Access Signature - Key, Read permissions
+  - Generate SAS token and URL - so **can access file**.
+  - Door is locked need a key
+- Geo replication
+- Lifecycle Management
+
+Add rule
+- Modif < 30 days => move to cool or archive storage
+- Save money
+
 ### LIVE DEMO: Azure Storage Explorer & Storage Browser [42]
 ### AZCOPY [43]
 ### Azure File Sync [44]
