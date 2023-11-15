@@ -1216,6 +1216,49 @@ So there are online ways of getting your data into the cloud.
 But if you don't have a speed problem, you can use one of these virtualized products or the Azure Stack
 
 ### Quiz 6: ## Section 8 Quiz
+
+#### Question 1:
+Which type of storage is not supported by Azure Storage Account?
+- Cosmos DB is NOT SUPPORTED in Azure storage account Standard general-purpose v2
+The Azure storage account Standard general-purpose v2 is the most common type which supports:
+- Blob Storage (including Data Lake Storage), 
+- Queue Storage, 
+- Table Storage, 
+- Azure Files. 
+Reference: 
+https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview
+
+#### Question 2:
+Which Azure service can be used to synchronize data between an organization’s on-premises Windows servers and an Azure file share?
+
+- Azure File Sync
+
+Azure File Sync is a service that allows users to sync files between on-premises and cloud Windows servers. 
+Reference: 
+https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction
+
+#### Question 3:
+Which Azure service can not be used to move individual files back and forth between Clouds?
+
+- Azure Storage Account
+
+Good job!
+Azure Storage Account provides access to your Azure storage resources. Azure Storage Explorer allows you to upload to Azure, download from Azure, or move between storage accounts. Azure File Sync is a service that allows users to sync files between on-premises and cloud Windows servers. AzCopy is a CLI tool for copying blobs or files.
+
+#### Hmmmm ... My AzCopy Question 
+```
+AzCopy is primarily designed for working within the Microsoft Azure ecosystem and isn't explicitly intended for transferring files directly between different cloud providers (such as Azure, AWS, Google Cloud, etc.). AzCopy supports efficient data transfer within Azure storage solutions (e.g., Azure Blob, File, Table, Queue storage) and between an Azure Storage account and an on-premises system.
+
+For transferring files between different cloud providers, including Azure and others like AWS or Google Cloud, AzCopy might not be the most suitable tool as it's tailored for Azure-centric operations. In such cases, you'll likely need to explore other methods or tools specifically designed for cross-cloud data transfers.
+
+There are various third-party tools, services, or APIs available that specialize in cross-cloud data migration. These tools are often more suitable for transferring files or data between different cloud platforms and can handle the nuances and authentication methods required by each cloud provider.
+
+Always refer to the specific documentation and resources provided by the respective cloud platforms for the most updated and recommended approaches to transferring data between clouds. Additionally, explore third-party solutions specialized in cross-cloud data migration for efficient and secure transfer of files between different cloud providers.
+
+```
+
+https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10
+
 ## Section 9: AZ-900 - Identity, Access and Security
 ### Identity and Azure Active Directory [47]
 ### Benefits of Microsoft Entra ID (formerly Azure Active Directory (Azure AD)) [48]
