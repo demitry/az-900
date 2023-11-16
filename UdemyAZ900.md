@@ -1364,7 +1364,25 @@ You can treat some access as "routine" and some as "not normal"
 
 SIGNAL -> DECISION -> ENFORCEMENT
 
-### Multi-Factor Authentication (MFA or 2FA) [51]
+### Azure Multi-Factor Authentication (MFA or 2FA) [51]
+
+Require 2 or more pieces of evidence (factors) in order to log in
+
+2 factors
+- password
+- time-limited code sent to you
+
+3 factors:
+- Something you **know** - i.e. password
+- Something you **have** - i.e. mobile phone, or access to email account
+- Something you **are** - i.e. fingerprint (biological)
+
+4 ways to get multifactor authentication
+- SMS
+- email
+- authenticator app
+- voice phone call
+
 ### Passwordless [52]
 ### Role-Based Access Control (RBAC) [53]
 ### Zero-Trust Model of Security [54]
