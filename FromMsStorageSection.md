@@ -146,3 +146,131 @@ Rehydrate an archived blob to an online tier
 https://learn.microsoft.com/en-us/azure/storage/blobs/archive-rehydrate-to-online-tier?tabs=azure-portal
 
 
+### Azure Files
+Azure File storage offers fully managed file shares in the cloud that are accessible via the industry standard 
+
+Server Message Block (SMB) 
+
+or 
+
+Network File System (NFS) protocols. 
+
+Azure Files file shares can be mounted concurrently by cloud or on-premises deployments. SMB Azure file shares are accessible from Windows, Linux, and macOS clients. NFS Azure Files shares are accessible from Linux or macOS clients. Additionally, SMB Azure file shares can be cached on Windows Servers with Azure File Sync for fast access near where the data is being used.
+
+### Azure Files key benefits:
+- Shared access: Azure file shares support the industry standard SMB and NFS protocols, meaning you can seamlessly replace your on-premises file shares with Azure file shares without worrying about application compatibility.
+- Fully managed: Azure file shares can be created without the need to manage hardware or an OS. This means you don't have to deal with patching the server OS with critical security upgrades or replacing faulty hard disks.
+- Scripting and tooling: PowerShell cmdlets and Azure CLI can be used to create, mount, and manage Azure file shares as part of the administration of Azure applications. You can create and manage Azure file shares using Azure portal and Azure Storage Explorer.
+- Resiliency: Azure Files has been built from the ground up to always be available. Replacing on-premises file shares with Azure Files means you don't have to wake up in the middle of the night to deal with local power outages or network issues.
+- Familiar programmability: Applications running in Azure can access data in the share via file system I/O APIs. Developers can therefore use their existing code and skills to migrate existing applications. In addition to System IO APIs, you can use Azure Storage Client Libraries or the Azure Storage REST API.
+
+### Azure Queues
+Azure Queue storage is a service for storing large numbers of messages. Once stored, you can access the messages from anywhere in the world via authenticated calls using HTTP or HTTPS. A queue can contain as many messages as your storage account has room for (potentially millions). Each individual message can be up to 64 KB in size. Queues are commonly used to create a backlog of work to process asynchronously.
+
+Queue storage can be combined with compute functions like Azure Functions to take an action when a message is received. 
+For example, you want to perform an action after a customer uploads a form to your website. You could have the submit button on the website trigger a message to the Queue storage. Then, you could use Azure Functions to trigger an action once the message was received.
+
+### Azure Disks
+Azure Disk storage, or Azure managed disks, are block-level storage volumes managed by Azure for use with Azure VMs. Conceptually, they’re the same as a physical disk, but they’re virtualized – offering greater resiliency and availability than a physical disk. With managed disks, all you have to do is provision the disk, and Azure will take care of the rest.
+
+### Azure Tables
+Azure Table storage stores large amounts of structured data. Azure tables are a NoSQL datastore that accepts authenticated calls from inside and outside the Azure cloud. This enables you to use Azure tables to build your hybrid or multi-cloud solution and have your data always available. Azure tables are ideal for storing structured, non-relational data.
+
+### Exercise: Create blob
+https://dpolstorageaccount.blob.core.windows.net/dpolcontainer/TestImage.png
+
+receive
+
+```xml
+<Error>
+<Code>ResourceNotFound</Code>
+<Message>The specified resource does not exist. RequestId:79ce6148-201e-0063-7670-18c012000000 Time:2023-11-16T09:37:15.5715485Z</Message>
+</Error>
+```
+
+Change Access level
+
+Set Blob (anonymous read access)
+
+https://dpolstorageaccount.blob.core.windows.net/dpolcontainer/TestImage.png
+
+is OK
+
+
+## Migration
+### Integrated tools
+- Azure Migrate: Discovery and assessment. Discover and assess on-premises servers running on VMware, Hyper-V, and physical servers in preparation for migration to Azure.
+- Azure Migrate: Server Migration. Migrate VMware VMs, Hyper-V VMs, physical servers, other virtualized servers, and public cloud VMs to Azure.
+- Data Migration Assistant. Data Migration Assistant is a stand-alone tool to assess SQL Servers. It helps pinpoint potential problems blocking migration. It identifies unsupported features, new features that can benefit you after migration, and the right path for database migration.
+- Azure Database Migration Service. Migrate on-premises databases to Azure VMs running SQL Server, Azure SQL Database, or SQL Managed Instances.
+- Azure App Service migration assistant. Azure App Service migration assistant is a standalone tool to assess on-premises websites for migration to Azure App Service. Use Migration Assistant to migrate .NET and PHP web apps to Azure.
+- Azure Data Box. Use Azure Data Box products to move large amounts of offline data to Azure.
+
+### Azure Data Box
+- 80 Tb
+Azure Data Box
+Azure Data Box is a physical migration service that helps transfer large amounts of data in a quick, inexpensive, and reliable way. The secure data transfer is accelerated by shipping you a proprietary Data Box storage device that has a maximum usable storage capacity of 80 terabytes. The Data Box is transported to and from your datacenter via a regional carrier. A rugged case protects and secures the Data Box from damage during transit.
+
+You can order the Data Box device via the Azure portal to import or export data from Azure. Once the device is received, you can quickly set it up using the local web UI and connect it to your network. Once you’re finished transferring the data (either into or out of Azure), simply return the Data Box. If you’re transferring data into Azure, the data is automatically uploaded once Microsoft receives the Data Box back. The entire process is tracked end-to-end by the Data Box service in the Azure portal.
+
+### Azure Data Box Use cases
+Data Box is ideally suited to transfer data sizes larger than 40 TBs in scenarios with no to limited network connectivity. The data movement can be one-time, periodic, or an initial bulk data transfer followed by periodic transfers.
+
+Here are the various scenarios where Data Box can be used to import data to Azure.
+
+Onetime migration - when a large amount of on-premises data is moved to Azure.
+Moving a media library from offline tapes into Azure to create an online media library.
+Migrating your VM farm, SQL server, and applications to Azure.
+Moving historical data to Azure for in-depth analysis and reporting using HDInsight.
+Initial bulk transfer - when an initial bulk transfer is done using Data Box (seed) followed by incremental transfers over the network.
+Periodic uploads - when large amount of data is generated periodically and needs to be moved to Azure.
+Here are the various scenarios where Data Box can be used to export data from Azure.
+
+Disaster recovery - when a copy of the data from Azure is restored to an on-premises network. In a typical disaster recovery scenario, a large amount of Azure data is exported to a Data Box. Microsoft then ships this Data Box, and the data is restored on your premises in a short time.
+Security requirements - when you need to be able to export data out of Azure due to government or security requirements.
+Migrate back to on-premises or to another cloud service provider - when you want to move all the data back to on-premises, or to another cloud service provider, export data via Data Box to migrate the workloads.
+Once the data from your import order is uploaded to Azure, the disks on the device are wiped clean in accordance with NIST 800-88r1 standards. For an export order, the disks are erased once the device reaches the Azure datacenter.
+
+### File move/copy
+- AzCopy
+- Azure Storage Explorer
+- Azure File Sync.
+
+#### AzCopy
+AzCopy is a command-line utility that you can use to copy blobs or files to or from your storage account. 
+With AzCopy, you can upload files, download files, copy files between storage accounts, and even synchronize files. 
+AzCopy can even be configured to **work with other cloud providers** to help move files back and forth between clouds.
+
+Important
+
+Synchronizing blobs or files with **AzCopy is one-direction** synchronization. When you synchronize, you designated the source and destination, and AzCopy will copy files or blobs in that direction. It **doesn't synchronize bi-directionally** based on timestamps or other metadata.
+
+#### Azure Storage Explorer
+Azure Storage Explorer is a standalone app that provides a graphical interface to manage files and blobs in your Azure Storage Account. It works on Windows, macOS, and Linux operating systems and uses AzCopy on the backend to perform all of the file and blob management tasks. With Storage Explorer, you can upload to Azure, download from Azure, or move between storage accounts.
+
+#### Azure File Sync
+Azure File Sync is a tool that lets you centralize your file shares in Azure Files and keep the flexibility, performance, and compatibility of a Windows file server. It’s almost like turning your Windows file server into a miniature content delivery network. Once you install Azure File Sync on your local Windows server, it will automatically stay **bi-directionally synced** with your files in Azure.
+
+With Azure File Sync, you can:
+
+- Use any protocol that's available on Windows Server to access your data locally, including SMB, NFS, and FTPS.
+- Have as many caches as you need across the world.
+- Replace a failed local server by installing Azure File Sync on a new server in the same datacenter.
+- Configure cloud tiering so the most frequently accessed files are replicated locally, while infrequently accessed files are kept in the cloud until requested.
+
+SMB, NFS, and FTPS protocols
+many caches
+
+### Quiz
+1. Which tool automatically keeps files between an on-premises Windows server and an Azure cloud environment updated? 
+- Azure File Sync
+Azure File Sync maintains a bidirectional synchronization of files between your on-premises and cloud Windows servers.
+
+2. Which storage redundancy option provides the highest degree of durability, with 16 nines of durability? 
+- Geo-zone-redundant-storage
+GRS offers durability for Azure Storage data objects of at least 16 nines (99.99999999999999%) over a given year.
+Geo-redundant storage (GRS) and geo-zone-redundant storage (GZRS) both provide 16 nines of durability.
+
+3. Which Azure Storage service supports big data analytics, as well as handling text and binary data types? 
+- Azure Blobs
+Azure Blobs is a massively scalable object store for text and binary data. Azure Blobs also includes support for big data analytics through Data Lake Storage Gen2.
