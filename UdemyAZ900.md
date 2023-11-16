@@ -1264,8 +1264,64 @@ Always refer to the specific documentation and resources provided by the respect
 
 https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10
 
+
 ## Section 9: AZ-900 - Identity, Access and Security
 ### Identity and Azure Active Directory [47]
+
+#### Identity
+- Def: **Identity** - in computing, a representation of a person, application or device
+- Login = provide your identity
+- Phones, printers - also have identity
+
+#### Security: Prove
+- Cannot just declare, that you are John Doe.
+- Prove it. Password, Certificate (cryptographically-signed file).
+
+#### Security: Client - Server Model
+
+Client - Server Model, Passwords or hash - Traditional Model
+
+Password checkers, bugs, cookies, copy token problems
+
+MD5 - reverce enjineered, salt, hacked 12345, "Password", etc.
+
+**Microsoft Azure Identity Management System**
+and it's based on a popular identity management system that companies used to call **Active Directory**.
+
+- It's important to note that Azure Active Directory
+- is not just a copy of Windows Active Directory that's running in the cloud.
+- It is completely redesigned.
+- It works differently in many different ways.
+- It doesn't have the same functionality.
+- Although over the years, Microsoft has been adding features and functionality to the cloud version.
+
+OLD name: Azure Active Directory (Azure AD, AAD)
+NEW name: **Microsoft Entra ID** Part of **Microsoft Entra**
+
+Traditional AD - DOES NOT work with Internet protocols
+
+Entra ID = "identity as a service" for your apps
+
+No code for 
+- handle users
+- passwords
+- password reset etc.
+
+Identity Provider
+
+1) client asks the server to log in,
+2) it's directed to the Azure AD.
+3) user ID and password => Azure AD
+4) Azure AD returns a token, which is cryptographically signed
+5) client returns the token to the server
+6) the server trusts the token.
+
+And in that way, the user ID passwords never passed to the server directly.
+
+- SAML
+- OpenID
+- WS Federation.
+
 ### Benefits of Microsoft Entra ID (formerly Azure Active Directory (Azure AD)) [48]
 ### Authenication vs Authorization [49]
 ### Azure AD Conditional Access [50]
