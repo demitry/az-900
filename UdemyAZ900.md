@@ -95,6 +95,10 @@ Links:
         - [Azure Migrate [45]](#azure-migrate-45)
         - [Azure Data Box [46]](#azure-data-box-46)
         - [Quiz 6: ## Section 8 Quiz](#quiz-6--section-8-quiz)
+            - [Question 1:](#question-1)
+            - [Question 2:](#question-2)
+            - [Question 3:](#question-3)
+            - [Hmmmm ... My AzCopy Question](#hmmmm--my-azcopy-question)
     - [Section 9: AZ-900 - Identity, Access and Security](#section-9-az-900---identity-access-and-security)
         - [Identity and Azure Active Directory [47]](#identity-and-azure-active-directory-47)
         - [Benefits of Microsoft Entra ID formerly Azure Active Directory Azure AD [48]](#benefits-of-microsoft-entra-id-formerly-azure-active-directory-azure-ad-48)
@@ -1010,6 +1014,7 @@ Simple - delete resource group.
 Some complexity with storage accounts with "soft delete" option.
 
 ## Section 8: AZ-900 - Azure Storage
+
 ### Overview of Azure Storage [39]
 
 - Container (Blob) Storage
