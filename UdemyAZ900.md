@@ -1319,10 +1319,28 @@ Identity Provider
 And in that way, the user ID passwords never passed to the server directly.
 
 - SAML
+  - https://www.cloudflare.com/learning/access-management/what-is-saml/
+  - Security Assertion Markup Language
+  - is a standardized way to tell external applications and services that a user is who they say they are. SAML makes single sign-on (SSO) technology possible by providing a way to authenticate a user once and then communicate that authentication to multiple applications. The most current version of SAML is SAML 2.0.
 - OpenID
-- WS Federation.
+  - https://dotnetopenauth.net/
+  - https://oauth.net/getting-started/
+  - https://openid.net/developers/
+- WS Federation
+  - (Web Services Federation) is an Identity Federation specification, developed by a group of companies: BEA Systems, BMC Software, CA Inc. (along with Layer 7 Technologies now a part of CA Inc.), IBM, Microsoft, Novell, Hewlett Packard Enterprise, and VeriSign. Part of the larger Web Services Security framework, WS-Federation defines mechanisms for allowing different security realms to broker information on identities, identity attributes and authentication.[1] WS-Federation focuses on federated identity and trusting authentication tokens across different realms, privileged password management is concerned with the security, control, and audit of high-risk account passwords within an IT environment
 
 ### Benefits of Microsoft Entra ID (formerly Azure Active Directory (Azure AD)) [48]
+
+- Security
+- Dev time
+- More features (such as access revires)
+- Centralized administration
+- SSO - Single Sign-On - Only one user ID and password
+- Use on premises AD 
+- Integration with other Azure services and storage accounts...
+
+
+
 ### Authenication vs Authorization [49]
 ### Azure AD Conditional Access [50]
 ### Multi-Factor Authentication (MFA or 2FA) [51]
