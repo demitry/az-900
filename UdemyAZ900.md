@@ -1339,10 +1339,31 @@ And in that way, the user ID passwords never passed to the server directly.
 - Use on premises AD 
 - Integration with other Azure services and storage accounts...
 
-
-
 ### Authenication vs Authorization [49]
+
+Authenication = why they are?
+
+Authorization = ensuring that the user is permitted to perform an action
+
+Move away from CHAOS - "all authenticated users having admin access" - 
+
 ### Azure AD Conditional Access [50]
+
+Conditional Access
+
+UNUSUAL EVENT
+
+- User A attempts to log in to the app from whithin the company office **as she does every day**
+  - Please Send code
+- User B attempts to log in for the first time in 4 months
+- Admin C tries to login from their phone
+  - Additional login checks
+- Admin D attempts to login from location 1200 miles from the office
+
+You can treat some access as "routine" and some as "not normal"
+
+SIGNAL -> DECISION -> ENFORCEMENT
+
 ### Multi-Factor Authentication (MFA or 2FA) [51]
 ### Passwordless [52]
 ### Role-Based Access Control (RBAC) [53]
