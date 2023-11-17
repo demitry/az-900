@@ -1399,6 +1399,35 @@ Pin code is tight to device
 - Yes (phone) - Approve singn in, 2 digit number.
 
 ### Role-Based Access Control (RBAC) [53]
+
+Role-Based Access Control (RBAC) Control
+
+Microsoft Azure ad supports a few different access systems:
+- RBAC - preferred
+- have token? (ticket) - can log in
+- claims-based access control 
+
+- Type of jobs in a company
+- Create roles that represent the common taskjs of the job
+- Define 25 different roles within Azure AD, then assign permissions to the role.
+- Provide gramular permissions to the role
+  - Developer - certain levels of permissions
+  - Manager - certain levels of permissions
+  - HR -...
+- Assign users to the role
+- Assign user to more than 1 role
+- You are not assigned permissions to individuals
+- 20 000 people and permissions - mess
+- Roles - simplifiing 
+
+Azure built-in permissions:
+- Reader - read-only
+- Controbutor - read and write, full access
+- Owner - ability to give/assign permissions to other people
+  - Be very careful
+
+You can create your own permissions and combination of them
+
 ### Zero-Trust Model of Security [54]
 ### Defense in Depth [55]
 ### Microsoft Defender for Cloud [56]
