@@ -1540,6 +1540,32 @@ https://blog.devolutions.net/2019/02/the-basics-of-zero-trust-architecture-8-bes
 
 ### Quiz 7: ## Section 9 Quiz
 
+#### Question 1: Azure AD Multi-Factor Authentication (MFA) typically include any or all of the following **except**:
+
+- **except** Someone you know
+
+Azure AD MFA works by requiring two or more of the following authentication methods: 
+• Something you know, typically a password. 
+• Something you have, such as a trusted device that's not easily duplicated, like a phone or hardware key. 
+• Something you are - biometrics like a fingerprint or face scan. 
+
+Reference: 
+
+https://learn.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks
+
+#### Question 2
+An organization plans to modernize its applications and network infrastructure in Cloud by migrating all network resources to Azure and decommissioning its on-premises data centre. What solution should be used to minimize the impact on users after the planned migration?
+
+- Sync all on-premises AD user account to Azure AD
+
+#### Question 3
+Which tool can continually assess your cross-cloud resources for security issues and allows you to review your secure score?
+- Microsoft Defender for Cloud
+- The secure score feature in Defender for Cloud enables you to achieve below two main goals:
+• to help you understand your current security situation 
+• to help you efficiently and effectively improve your security 
+
+Reference: https://learn.microsoft.com/en-us/azure/defender-for-cloud/secure-score-security-controls
 
 
 ### Factors that Affect Cost [57]
