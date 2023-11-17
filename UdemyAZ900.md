@@ -1429,6 +1429,65 @@ Azure built-in permissions:
 You can create your own permissions and combination of them
 
 ### Zero-Trust Model of Security [54]
+
+Zero-Trust Methodology
+
+1 door is open? - Everything is open
+
+Key for the room, kitchen
+
+Don't assume everything behind the firefall is safe
+
+The old way: API, and one system can call the other, no security involved because it's all inside the house.
+
+The zero trust model: says "don't trust each other".
+- Azure AD
+- client secret
+- certificate
+
+3 main principals:
+- Verify explicitly
+- Use the least priveleged access
+- Assume breach (Imagine there is a hacker that has access to your network)
+
+Imagine there is a hacker that has access to your network.
+But if you do your security right, applications are talking to each other, it's encrypted, they're using a very secure model,
+like a client certificate for encrypting that communications.
+A hacker living on your network cannot even intercept that.
+
+- Use every available method to validate identity and authorization
+  - who is asking?
+  - is who the say they are
+
+- Just-in-Time (JIT)
+- Just enough-access (JEA)
+
+- Security even inside the network;
+- Encryption;
+- Segmentation of network
+- Threat detection
+- Permissions to deeper system
+- Have active thread detection
+  - Someone repeatedly tries to yse ID and password
+  - => 24 h account lock
+- Download source code or DB, or all data? Suspicious.
+
+Rules
+- Identity: Verify and secure each identity.
+- Devices: ensure compliance and health status:
+  - updated OS, (not Windows 95)
+  - Browser updates
+  - Security patches
+- Applications: appropriate in-app permissionsm monitor user actions
+- Data: data-driven protection, encrypt and restrict access
+- Infrastructure: network, 
+  - robust monitoring 
+  - detect attacks
+  - block and flag risky behaviour
+  - virtual networks, security groups
+  - monitoring, reporting, alerts - intelligent automations
+- Network: encrypt all communications
+
 ### Defense in Depth [55]
 ### Microsoft Defender for Cloud [56]
 ### Quiz 7: ## Section 9 Quiz
