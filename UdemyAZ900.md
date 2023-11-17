@@ -1383,7 +1383,21 @@ Require 2 or more pieces of evidence (factors) in order to log in
 - authenticator app
 - voice phone call
 
-### Passwordless [52]
+### Passwordless authentication [52]
+
+Passwords = low security but convinient
+Passwords + 2FA = Hight Security but inconvenient
+
+Passwordless authentication
+- Gestures to sign in
+- Biometrics: Face recognition
+- Biometrics: Fingerprint
+
+Pin code is tight to device
+
+- Are you attempting to use this app? 
+- Yes (phone) - Approve singn in, 2 digit number.
+
 ### Role-Based Access Control (RBAC) [53]
 ### Zero-Trust Model of Security [54]
 ### Defense in Depth [55]
