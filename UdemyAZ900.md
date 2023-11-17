@@ -1525,7 +1525,23 @@ https://blog.devolutions.net/2019/02/the-basics-of-zero-trust-architecture-8-bes
 
 
 ### Microsoft Defender for Cloud [56]
+
+- Complex product, more security
+- Protects services (list of services)
+- 15 $ per service ?? per month - TODO check
+- Analisys
+- Recommendation
+- PCI HIPPA compliance
+- Antivirus
+- Workload protection
+- Firewall Manager
+- Inventory
+- Info protection
+
 ### Quiz 7: ## Section 9 Quiz
+
+
+
 ### Factors that Affect Cost [57]
 ## Section 10: AZ-900 - Cost Management in Azure
 ### Azure Pricing Calculator [58]
