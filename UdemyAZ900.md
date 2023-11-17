@@ -1489,6 +1489,41 @@ Rules
 - Network: encrypt all communications
 
 ### Defense in Depth [55]
+
+- don't just focus on a single tool to protect you.
+- It's like having a security of your house or your building and only thinking a single lock will protect
+
+Security Layers
+- **Physical** - i.e. Door locks and key cards
+  - Protect your office and devices
+- **Identity and Access**
+  - Azure AD
+  - firewalls 
+  - denial of service protection applications,
+- **Perimeter**
+  - the perimeter of your network
+  - **Network**
+  - NSGs and subnets that are dividing your network
+  - Deny by Default
+  - Azure Active Directory servers.
+- **Compute** Layer
+  - Limit Remote Desktop Access
+  - Windows Update and Patches
+  - Bastions
+- **Application**
+  - i.e. API management
+- **Data** 
+  - i.e. virtual network endpoint
+  - fields validation
+  - anti form injection..
+
+Azure tools - removed from AZ-900 ezam
+
+https://www.geeksforgeeks.org/defense-in-depth-strategy-in-microsoft-azure/
+
+https://blog.devolutions.net/2019/02/the-basics-of-zero-trust-architecture-8-best-practices
+
+
 ### Microsoft Defender for Cloud [56]
 ### Quiz 7: ## Section 9 Quiz
 ### Factors that Affect Cost [57]
