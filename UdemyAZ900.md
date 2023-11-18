@@ -1643,7 +1643,15 @@ TCO - Total Cost of Ownership - On-Premices
 
 Dozens of service tweaks
 
-### Azure Cost Management [60]
+### Azure Cost Management - Portal[60]
+
+- Cost Management Service in Portal
+- Cost Analisys, Recommendations, Budgets, Ivoices
+- Analyze spending over time, Tracking
+- Budget notifications - Why?
+- History of invoices
+- Reports, emails
+
 ### Resource Tags [61]
 ### Quiz 8: ## Section 10 Quiz
 ## Section 11: AZ-900 - Azure Governance and Compliance
