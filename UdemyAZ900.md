@@ -1694,6 +1694,29 @@ Add filter - ... created by me, or with tags....
 - Resource groups
 
 ### Quiz 8: ## Section 10 Quiz
+
+Question 1:
+Which of the following is not a factor that users can consider affecting costs in Azure?
+
+- Data Center Maintenance
+
+The costs associated with DC facility maintenance, e.g., power, cooling, and physical security are typically included in the service provided by the cloud provider and not billed separately to the cloud customer.
+
+Question 2:
+Which tool can be used to estimate the cost savings of workload migration from on-premises to Azure cloud?
+
+- Total Cost of Ownership (TCO) calculator
+
+The Total Cost of Ownership (TCO) calculator is a free tool that anyone can use to estimate the costs of migrating their data and applications to Azure and predict potential savings. Reference: https://azure.microsoft.com/en-au/pricing/tco/calculator/
+
+
+Question 3:
+An organization has five branches. The organization plans to generate billing reports with Azure resource utilization of each branch from the Azure portal. Which tool can be used before the organization generates the reports?
+
+- Tags
+
+Tags provide metadata that can be added to Azure resources to organize related resources and help with billing and support issues. Reference: https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources
+
 ## Section 11: AZ-900 - Azure Governance and Compliance
 ### Azure Governance and Compliance [62]
 ### Azure Blueprints [63]
