@@ -1823,6 +1823,74 @@ Non-compliance message
 - Try to delete the resource - Failed (lock enforced)
 
 ### Microsoft Purview [67]
+
+Unified Data Governance
+
+https://learn.microsoft.com/en-us/purview/purview
+
+All of your customer lists and your IP, those documents that are in your thing, the financials, all of these things are stuff that you do not want hackers or malicious users to get hold of.
+
+Microsoft Purview
+
+- **Auditing** - collecting the logins and the accesses of various users over time.
+- **Communication compliance**
+  - which monitors messaging in Microsoft Teams and Office 365
+  - and the way that people communicate inside your organization - as well as external to your organization
+- **Data Map** and **Data Catalog**
+  - where your data lies, what servers hold what data
+  - which is the source of the data and which are just copies and how that stuff works
+- **eDiscovery** - search and find things in your organization.
+- **Information protection**
+- **Insider Risk Management**
+  - Sometimes people inside your organization are putting your company at risk.
+- **Data Lifecycle Management**
+  - data does have a life and at some point it no longer useful
+  - just historical, sales records from five, 10 years ago.
+  - How do you handle data as it goes through from being created all the way till it needs to be archived?
+- **Data loss prevention**, which is obviously protecting, encryption, and making sure your data does not get exfiltrated.
+- **Compliance Manager** - which is a dashboard that evaluates your company based on how it meets its own goals in terms of data protection.
+
+Company that serves both Visa and MasterCard, the people who work on those accounts need to be different people. 
+And oftentimes, you'll find that you have some legal obligation
+to make sure that the Visa, people working on the Visa account, are never communicating with people that work on the MasterCard account.
+
+- Do you want inappropriate images, inappropriate text to be shared over Teams.
+- So you're gonna have basically checkers to make sure that no adult content is being stored inside the company, no particular language is being used, and even going back to remediate that, to remove.
+- So if somebody is particularly vulgar in a company chat, the communication compliance can actually just remove those chats from the chat and obviously the person can get disciplined.
+
+- Classifying your data:
+  - public, private, top secret, military
+- Srtict control
+- Tag the Data
+- Channels
+
+Potential data leak activities
+- Extract tables into xml
+- Track email
+- Certain activity
+
+```
+For instance, I've worked in a place
+where a particular person was let go
+and unfortunately the HR person
+did not walk them to the front door,
+they let them go back to their desk,
+the person promptly sat down and started deleting stuff.
+They started deleting all the work that they had worked on.
+They were probably bitter about being let go.
+And so it was a total mistake, obviously,
+but it was a malicious action, right?
+
+Github repo ? 
+t's unfortunate reality,
+but certain organizations
+have to be extra vigilant with communications.
+And so Microsoft Purview
+basically can audit and control
+and remediate activities,
+data-related activities across your organization.
+```
+
 ### Quiz 9: ## Section 11 Quiz
 ## Section 12: AZ-900 - Tools for Managing and Deploying Azure Resources
 ### Azure Portal and Command Line Tools [68]
