@@ -1797,6 +1797,19 @@ And you have the option of creating your own custom policies.
 Can create custom policy using JSON definitions
 
 ### DEMO: Azure Policy [65]
+
+- Policy | Definitions
+- 100 and 100 policies
+- filter, "Backup"
+- "Azure Backup should be enabled for Virtual Machine"
+- JSON format
+- **Scope**: Assign - Scope - Subscription - Resource Group
+- **Exclusions**: Exclude some resources you want to exclude
+
+Advanced - Specific resources
+Remediation - Tasks
+Non-compliance message
+
 ### Resource Locks [66]
 ### Microsoft Purview [67]
 ### Quiz 9: ## Section 11 Quiz
