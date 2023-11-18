@@ -1613,6 +1613,8 @@ Bandwith
 
 Azure Pricing Calculator
 
+Azure Advizor
+
 ### Azure Pricing Calculator [58]
 
 https://azure.microsoft.com/en-us/pricing/calculator/
@@ -1719,6 +1721,25 @@ Tags provide metadata that can be added to Azure resources to organize related r
 
 ## Section 11: AZ-900 - Azure Governance and Compliance
 ### Azure Governance and Compliance [62]
+
+- Organization and Managemtnt
+- IT-rules to implement
+- Example: Always have daily backup enabled on every server
+- Incident - Backup
+=> Policy
+
+Option 1) Send an e-mail with the rules and assume everyone reads it and remembers it
+
+But what with new emploee?
+
+Option 2) Use Azure Tools to enforce the rules (or simply audit compliance)
+
+#### Tools
+- Azure Blueprints
+- Azure Policy
+- Resource Locks
+- Microsoft Preview - large tool
+
 ### Azure Blueprints [63]
 ### Azure Policy [64]
 ### DEMO: Azure Policy [65]
