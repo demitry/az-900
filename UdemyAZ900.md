@@ -126,7 +126,10 @@ Links:
         - [Quiz 8: ## Section 10 Quiz](#quiz-8--section-10-quiz)
     - [Section 11: AZ-900 - Azure Governance and Compliance](#section-11-az-900---azure-governance-and-compliance)
         - [Azure Governance and Compliance [62]](#azure-governance-and-compliance-62)
+            - [Tools](#tools)
         - [Azure Blueprints [63]](#azure-blueprints-63)
+            - [Blueprints - tamplates for future subscriptions](#blueprints---tamplates-for-future-subscriptions)
+            - [the only way of assigning a deny permission](#the-only-way-of-assigning-a-deny-permission)
         - [Azure Policy [64]](#azure-policy-64)
         - [DEMO: Azure Policy [65]](#demo-azure-policy-65)
         - [Resource Locks [66]](#resource-locks-66)
@@ -1741,6 +1744,34 @@ Option 2) Use Azure Tools to enforce the rules (or simply audit compliance)
 - Microsoft Preview - large tool
 
 ### Azure Blueprints [63]
+
+#### Blueprints - tamplates for future subscriptions
+
+Options
+- You can create an Azure subscription without a template (EMPTY)
+- With a blueprint, you can predefine a number of items:
+  - RBAC
+  - Policy Definitions
+  - Resource Groups
+  - ARM templates
+ - Create subscription from blueprint (you already have your company's standard sets of policies ready to go.)
+
+Now, one of the interesting things though is that 
+
+#### the only way of assigning a deny permission
+
+using a blueprint is **the only way of assigning** what's called **a deny permission**.
+
+But you can't specifically explicitly assign someone a negative permission, a denial,
+
+```
+You can't say this person shall never get access to this resource. That is not a feature of Microsoft Azure except in Azure blueprints.
+
+And so you can set up a set of denial permissions and when they're assigned to a subscription
+```
+
+So there are ways of creating some complicated multiple subscriptions in groups and blueprints allows you to have some standards across all of these subscriptions.
+
 ### Azure Policy [64]
 ### DEMO: Azure Policy [65]
 ### Resource Locks [66]
