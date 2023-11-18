@@ -1811,6 +1811,17 @@ Remediation - Tasks
 Non-compliance message
 
 ### Resource Locks [66]
+
+2 types
+- Read Only
+- Can Not Delete (can read, can not delete)
+
+- Goto resource } Locks
+- + Add lock
+- lock name: donotdeleteme
+- Lock is enabled
+- Try to delete the resource - Failed (lock enforced)
+
 ### Microsoft Purview [67]
 ### Quiz 9: ## Section 11 Quiz
 ## Section 12: AZ-900 - Tools for Managing and Deploying Azure Resources
