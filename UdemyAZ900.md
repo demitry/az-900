@@ -1608,6 +1608,23 @@ Bandwith
 Azure Pricing Calculator
 
 ### Azure Pricing Calculator [58]
+
+https://azure.microsoft.com/en-us/pricing/calculator/
+
+- Add to Card, tune, licenses, observe costs.
+- Select VM ON time, save money
+- Export and share estimates, Save for later.
+- Storage Reservation Options
+
+Not 100 % accurate
+
+Configurable options
+- Region
+- Tier
+- Subscription type
+- Support Options
+- Dev/Test pricing
+
 ### Total Cost of Ownership Calculator [59]
 ### Azure Cost Management [60]
 ### Resource Tags [61]
