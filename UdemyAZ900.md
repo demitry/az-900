@@ -1892,6 +1892,28 @@ data-related activities across your organization.
 ```
 
 ### Quiz 9: ## Section 11 Quiz
+
+Question 1:
+Which tool is not designed for Azure users for resource governance and compliance purposes?
+- Azure Support Portal - is not designed for Azure users for resource governance and compliance purposes
+
+Azure users can use Azure Blueprints, Azure Policy, resource locks, and Service Trust Portal to help with governance and compliance of their Azure environments.
+
+
+Question 2:
+
+What is Azure Blueprints?
+- To define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements
+
+Resource Locks allow you to “lock” resources to prevent them from being changed without removing the lock. Azure Policy includes rules that can be enforced by blocking the action or just reporting the action. Service Trust Portal is a portal that provides access to the various certifications, regulations and standards. Reference: https://learn.microsoft.com/en-us/azure/governance/blueprints/overview
+
+
+Question 3:
+If you want to ensure your team deploys Azure resources only to allowed regions, what Azure service should be used?
+- Azure Policy
+You can use Azure Policy to implement standards for your organization across Azure. Some useful governance actions you can enforce with Azure Policy include: ensuring your team deploys Azure resources only to allowed regions, enforcing the consistent application of taxonomic tags, and requiring resources to send diagnostic logs to a Log Analytics workspace. Reference: https://learn.microsoft.com/en-us/azure/governance/policy/overview
+
+
 ## Section 12: AZ-900 - Tools for Managing and Deploying Azure Resources
 ### Azure Portal and Command Line Tools [68]
 ### LIVE DEMO: Create Resources Using Command Line [69]
