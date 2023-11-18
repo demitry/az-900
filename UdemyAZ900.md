@@ -1659,6 +1659,40 @@ Dozens of service tweaks
 - Reports, emails
 
 ### Resource Tags [61]
+
+Add metadata to Azure resources
+
+Resource Tags - a way for you to add what is called metadata to your resources for your own personal use.
+
+VM was created
+- Who created a VM ?
+- Why ?
+- What project It's part of ?
+- Where the billing for that ?
+
+Helps with billing and support issues
+The main purpose for this is for billing and support.
+
+What resources the most consuming?
+
+Goto any rs -> "Click here to add tags"
+Or "Tags"
+
+Tag = name-value pair
+
+This Data is not encrypted
+
+CreatedBy
+
+Cost Management - Cost Analysis
+
+Generate reports based on tags
+
+Add filter - ... created by me, or with tags....
+
+- Cost by Resource
+- Resource groups
+
 ### Quiz 8: ## Section 10 Quiz
 ## Section 11: AZ-900 - Azure Governance and Compliance
 ### Azure Governance and Compliance [62]
