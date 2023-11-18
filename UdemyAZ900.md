@@ -1773,6 +1773,29 @@ And so you can set up a set of denial permissions and when they're assigned to a
 So there are ways of creating some complicated multiple subscriptions in groups and blueprints allows you to have some standards across all of these subscriptions.
 
 ### Azure Policy [64]
+
+- assign rules to a resource group
+- assign rules to the entire subscription
+- evaluate compliance to those groups
+
+- "every virtual machine must have Azure backup daily."
+- Assign this policy to a resource group or to a subscription
+- every VM in this scope must have a backup
+
+Example of Built-In Policies
+
+- Require SqlServer 12
+- Allowed Locations
+- Allowed VM SDKs
+- Apply tag and its default value
+- Not allowed resource type
+
+There are literally thousands of built-in policies,
+
+And you have the option of creating your own custom policies.
+
+Can create custom policy using JSON definitions
+
 ### DEMO: Azure Policy [65]
 ### Resource Locks [66]
 ### Microsoft Purview [67]
