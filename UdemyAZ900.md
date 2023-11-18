@@ -1626,6 +1626,23 @@ Configurable options
 - Dev/Test pricing
 
 ### Total Cost of Ownership Calculator [59]
+
+https://azure.microsoft.com/en-us/pricing/tco/calculator/
+
+TCO - Total Cost of Ownership - On-Premices
+
+- Comparison with Azure cost
+
+- Electricity
+- Cooling
+- Internet Connectivity
+- Rack Space
+- Setup labor
+- Maintanance labor
+- Backup
+
+Dozens of service tweaks
+
 ### Azure Cost Management [60]
 ### Resource Tags [61]
 ### Quiz 8: ## Section 10 Quiz
