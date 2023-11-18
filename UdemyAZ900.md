@@ -1567,9 +1567,46 @@ Which tool can continually assess your cross-cloud resources for security issues
 
 Reference: https://learn.microsoft.com/en-us/azure/defender-for-cloud/secure-score-security-controls
 
+## Section 10: AZ-900 - Cost Management in Azure
 
 ### Factors that Affect Cost [57]
-## Section 10: AZ-900 - Cost Management in Azure
+
+Different services billed bt different factors
+
+Free Services:
+- Resource Groups
+- Virtual Networks - (up to 50)
+- Load balancer - (basic)
+- Azure Active Directory (basic)
+- Network Security groups
+- Free-tier web apps (up to 10)
+
+The rest - 2-3-more metrics
+
+- Azure Functions:
+  - 1 million executions per month - Free
+  - 20 cents per million executions
+  - Cheapest VM - 20 $ per month
+
+Pay per usage services
+- Functions
+- Loginc Apps
+- Storage per Gb
+- Outbound bandwith - First 5 Gb is free
+- Cognitive Services API (ML, AI)
+
+Pridictability and Stability in pricing
+- Variable Pricing
+- Fixedf price for computing power or storage capacity
+- Reserved instances - Discount for 1-year or 3-year commitment in VM
+- Multi-tenant or isolated environment, dedicated hosting
+
+Bandwith
+- First 5 Gb is free
+- 1 PB of data transfer = 52 000 $ data transfer charges
+
+Azure Pricing Calculator
+
 ### Azure Pricing Calculator [58]
 ### Total Cost of Ownership Calculator [59]
 ### Azure Cost Management [60]
