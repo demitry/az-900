@@ -139,6 +139,10 @@ Links:
         - [Azure Portal and Command Line Tools [68]](#azure-portal-and-command-line-tools-68)
         - [LIVE DEMO: Create Resources Using Command Line [69]](#live-demo-create-resources-using-command-line-69)
         - [Azure Arc [70]](#azure-arc-70)
+        - [For example: Add a Kubernetes cluster with Azure Arc](#for-example-add-a-kubernetes-cluster-with-azure-arc)
+            - [To identify or create a Kubernetes cluster](#to-identify-or-create-a-kubernetes-cluster)
+            - [To set up your local machine](#to-set-up-your-local-machine)
+            - [Azure Stack HCI](#azure-stack-hci)
         - [Infrastructure as Code IaC [71]](#infrastructure-as-code-iac-71)
         - [ARM Templates [72]](#arm-templates-72)
         - [LIVE DEMO: Generate ARM Templates in the Azure Portal [73]](#live-demo-generate-arm-templates-in-the-azure-portal-73)
@@ -1990,6 +1994,65 @@ az group delete --name newrg
 ```
 
 ### Azure Arc [70]
+
+https://learn.microsoft.com/en-us/azure/azure-arc/
+
+See and manage all your on-prem infrastructure, anywhere. It's free to get started.
+
+With Azure Arc, you can manage your infrastructure in all your environments, including on-premises, other public clouds, and edge devices. There's no charge to start, just add your infrastructure and enjoy the views.
+
+Your AWS, Google Cloud, your Kubernetes clusters, ... view 
+- See Instructions and prerequisites for it
+- Add a Kubernetes cluster with Azure Arc
+- Similar instructions are for Servers
+
+### For example: Add a Kubernetes cluster with Azure Arc
+
+#### To identify or create a Kubernetes cluster
+
+- A new or existing Kubernetes clusterThe cluster must use Kubernetes version 1.13 or later (including OpenShift 4.2 or later and other Kubernetes derivatives)
+    
+    [Learn how to create a Kubernetes cluster
+    
+    ](https://aka.ms/learn-how-to-create-kubernetes-cluster)
+    
+- Access to ports 443 and 9418
+    
+    Make sure the cluster has access to these ports, and the required[outbound URLs
+    
+    ](https://aka.ms/arc-enabled-k8-outbound-urls)
+    
+- Connectivity methodYou can connect to the internet over a public endpoint, through a proxy server, or over a private endpoint. An Azure Arc Private link scope is required to connect over a private endpoint.[Create an Azure Arc Private link scope](https://portal.azure.com/#blade/Microsoft_Azure_HybridCompute/PrivateLinkScopeCreate.ReactView)
+    
+
+#### To set up your local machine
+
+- Azure CLIAn Azure CLI script will be generated that you will run locally to connect your cluster.
+    
+    [Learn how to install the Azure CLI on your local machine
+    
+    ](https://aka.ms/learn-how-to-install-azure-cli)
+    
+- A new or existing Kubernetes clusterInstall the latest connectedk8s and k8s-configuration, k8s-extension, customlocation CLI extensions.
+    
+    [Learn how to install these extensions
+    
+    ](https://aka.ms/arc-k8-connect-cluster)
+    
+- Kubeconfig file with cluster admin permissions
+    
+    The file should be accessible via your CLI tooling.[Learn how to get a kubeconfig file](https://aka.ms/how-to-get-kubeconfig-file)
+
+#### Azure Stack HCI
+
+- Edge Computing - private network on premises
+- ML...
+- SQL Managed Instances - it is not a SQL server, it is managed instance
+
+- Get hands-on with ArcBox
+- Use ArcBox to deploy an Azure Arc sandbox in less than an hour.
+- Get sandbox and try
+
 ### Infrastructure as Code (IaC) [71]
 ### ARM Templates [72]
 ### LIVE DEMO: Generate ARM Templates in the Azure Portal [73]
