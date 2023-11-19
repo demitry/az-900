@@ -1916,6 +1916,28 @@ You can use Azure Policy to implement standards for your organization across Azu
 
 ## Section 12: AZ-900 - Tools for Managing and Deploying Azure Resources
 ### Azure Portal and Command Line Tools [68]
+
+- Azure CLI
+- PowerShell
+- Azure Portal
+- Azure Cloud Shell 
+- Azure Mobile App
+
+- Azure Portal - - wizards, manage resources
+- What if 100 - 10000 resources? = PowerShell and CLI
+- PowerShell and CLI built into the Portal 
+- CloudShell: Switch PowerShell and Bash
+
+```
+az functionapp list
+
+az webapp list
+```
+
+JSON details
+
+Write scripts and repeatedly run them
+
 ### LIVE DEMO: Create Resources Using Command Line [69]
 ### Azure Arc [70]
 ### Infrastructure as Code (IaC) [71]
