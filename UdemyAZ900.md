@@ -1939,6 +1939,56 @@ JSON details
 Write scripts and repeatedly run them
 
 ### LIVE DEMO: Create Resources Using Command Line [69]
+
+command line - require storage account
+
+az target verb
+
+```
+az group create --name newrg --location eastus
+```
+
+```json
+{
+  "id": "/subscriptions/a77b1bf0-3869-4d3f-9d30-42037952d048/resourceGroups/newrg",
+  "location": "eastus",
+  "managedBy": null,
+  "name": "newrg",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": null,
+  "type": "Microsoft.Resources/resourceGroups"
+}
+```
+
+"provisioningState": "Succeeded"
+
+"Resource groups" - "Refresh"
+
+
+```
+az vm create --resource-group newrg --name newvm --image Win2019Datacenter --public-ip-sku Standard --admin-username azadminuser
+
+Admin Password:
+Confirm Admin Password:
+```
+
+Can run command or 
+Create a scripting file with variables
+
+publicIpAddress
+
+```
+az vm open-port --port 80 --resource-group newrg --name newvm
+```
+
+...
+
+```
+az group delete --name newrg
+```
+
 ### Azure Arc [70]
 ### Infrastructure as Code (IaC) [71]
 ### ARM Templates [72]
