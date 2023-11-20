@@ -144,6 +144,8 @@ Links:
             - [To set up your local machine](#to-set-up-your-local-machine)
             - [Azure Stack HCI](#azure-stack-hci)
         - [Infrastructure as Code IaC [71]](#infrastructure-as-code-iac-71)
+            - [Drift](#drift)
+            - [IaC Options](#iac-options)
         - [ARM Templates [72]](#arm-templates-72)
         - [LIVE DEMO: Generate ARM Templates in the Azure Portal [73]](#live-demo-generate-arm-templates-in-the-azure-portal-73)
         - [Quiz 10: ## Section 12 Quiz](#quiz-10--section-12-quiz)
@@ -2054,6 +2056,61 @@ Your AWS, Google Cloud, your Kubernetes clusters, ... view
 - Get sandbox and try
 
 ### Infrastructure as Code (IaC) [71]
+
+- Everything, but not programs and data
+- It's the glue that ties everything together.
+- Settings of everything
+
+Infrastructure:
+- All servers, 
+- storage, 
+- dataabase settings,
+- network settings,
+- firewalls,
+- load balancers, etc.
+
+How do you backup your infrastructure setup?
+
+- Define your infrastructure in a configuration file.
+- Store in github
+- Re-deploy again and again
+- Re-create it in another region (duplication)
+
+Concept:
+
+Desired state configuration (DSC)
+Now this is the concept of your using automation to ensure that whatever your hardware and network setup is in production never changes, doesn't drift from the original setup.
+
+
+#### Drift
+
+Your initial setup - from 2020
+
+But over time, developers get in there, your operations team gets in there,
+- somebody touches a setting, 
+- temporarily turns on audit logs, 
+- diagnostic logs,
+- They change the backup from 14 days to seven days.
+- They open up RDP port.
+Things happen over time where people get in there, especially in the larger team, and change the configuration
+of your production environment.
+
+That's called **drift**.
+
+Sometimes you need theese changes, 
+Sometimes - not.
+
+#### IaC Options
+
+Microsoft:
+- **ARM Templates** (JSON)
+- **Bicep** (you compile Bicep code into ARM templates)
+- PowerShell Scripts
+Non-Ms:
+- Terraform (3rd party, cross-platform, code your infrastructure)
+- Chef, Puppet
+- Other Type of Code
+
 ### ARM Templates [72]
 ### LIVE DEMO: Generate ARM Templates in the Azure Portal [73]
 ### Quiz 10: ## Section 12 Quiz
