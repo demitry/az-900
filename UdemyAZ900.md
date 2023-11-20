@@ -147,6 +147,8 @@ Links:
             - [Drift](#drift)
             - [IaC Options](#iac-options)
         - [ARM Templates [72]](#arm-templates-72)
+            - [ARM - Azure Resource Manager](#arm---azure-resource-manager)
+            - [ARM templates samples](#arm-templates-samples)
         - [LIVE DEMO: Generate ARM Templates in the Azure Portal [73]](#live-demo-generate-arm-templates-in-the-azure-portal-73)
         - [Quiz 10: ## Section 12 Quiz](#quiz-10--section-12-quiz)
     - [Section 13: AZ-900 - Monitoring Tools](#section-13-az-900---monitoring-tools)
@@ -2112,6 +2114,58 @@ Non-Ms:
 - Other Type of Code
 
 ### ARM Templates [72]
+
+#### ARM - Azure Resource Manager
+
+- Everything is created by Azure Resource Manager
+- ARM-template is created and deployed
+
+**The Azure Resource Manager **is the service that runs underneath Microsoft Azure Portal, the command line and other management methods that allows you to interact with the resources that are running inside of Azure.
+
+You've got other ways of interacting with Azure, including your URLs, which is the rest API, and you can even do it programmatically. 
+If you get the Azure SDK, you can write computer programs to interact with Microsoft Azure.
+
+All of those methods go through the same way of creating and managing resources, which is is the Azure resource manager.
+
+And so when you do the creating a resource in the portal, it gets created into what's called an ARM template.
+
+#### ARM templates samples
+
+https://github.com/Azure/azure-quickstart-templates
+
+https://learn.microsoft.com/en-us/azure/app-service/samples-resource-manager-templates
+
+https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.web/webapp-basic-linux
+
+https://github.com/Azure/azure-quickstart-templates/blob/master/modules/Microsoft.Storage/storageAccounts/0.9/azuredeploy.json#L122
+
+```json
+...
+    "resources": [
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2021-01-01",
+            "name": "[parameters('storageAccountName')]",
+            "location": "[parameters('location')]",
+            "sku": {
+                "name": "[parameters('skuName')]"
+            },
+            "kind": "[parameters('kind')]",
+            "properties": {
+                "accessTier": "[parameters('accessTier')]",
+                "minimumTlsVersion": "[parameters('minimumTlsVersion')]",
+                "supportsHttpsTrafficOnly": "[parameters('supportsHttpsTrafficOnly')]",
+                "allowBlobPublicAccess": "[parameters('allowBlobPublicAccess')]",
+                "allowSharedKeyAccess": "[parameters('allowSharedKeyAccess')]",
+                "networkAcls": {
+                    "bypass": "[parameters('networkAclsBypass')]",
+                    "defaultAction": "[parameters('networkAclsDefaultAction')]"
+                }
+            }
+        }
+        ...
+```
+
 ### LIVE DEMO: Generate ARM Templates in the Azure Portal [73]
 ### Quiz 10: ## Section 12 Quiz
 ## Section 13: AZ-900 - Monitoring Tools
