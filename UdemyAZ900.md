@@ -153,8 +153,13 @@ Links:
             - [way: script template + parameters](#way-script-template--parameters)
             - [nd way : template library: template specs](#nd-way--template-library-template-specs)
         - [Quiz 10: ## Section 12 Quiz](#quiz-10--section-12-quiz)
+            - [Question 1:](#question-1)
+            - [Question 2:](#question-2)
+            - [Question 3:](#question-3)
     - [Section 13: AZ-900 - Monitoring Tools](#section-13-az-900---monitoring-tools)
         - [Azure Advisor and Azure Service Health [74]](#azure-advisor-and-azure-service-health-74)
+            - [Azure Advisor](#azure-advisor)
+            - [Azure Service Health](#azure-service-health)
         - [Azure Diagnostics Settings [75]](#azure-diagnostics-settings-75)
         - [Azure Monitor [76]](#azure-monitor-76)
         - [Quiz 11: ## Section 13 Quiz](#quiz-11--section-13-quiz)
@@ -2227,7 +2232,42 @@ Good job!
 The Azure ARM templates are an infrastructure-as-code approach for your Azure deployment using JavaScript Object Notation (JSON) definition, which defines the infrastructure and configuration for your project. Reference: https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview
 
 ## Section 13: AZ-900 - Monitoring Tools
+
 ### Azure Advisor and Azure Service Health [74]
+
+#### Azure Advisor 
+- analyze and recommendations
+- VM size: low usage?
+- scalablility
+- security
+- availability zones
+
+Advisor | Overview
+
+- Lists to consider
+
+Cost recommendations
+
+https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-cost-recommendations
+
+Security recommendations
+
+https://learn.microsoft.com/en-us/azure/advisor/advisor-security-recommendations
+
+Operational excellence recommendations
+
+https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-operational-excellence-recommendations
+
+Performance recommendations
+
+https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-performance-recommendations
+
+#### Azure Service Health
+- Create an alert rule
+- Regions 
+- set up alerts, phone
+- History: historical issues, past 24 hours, 7 days
+
 ### Azure Diagnostics Settings [75]
 ### Azure Monitor [76]
 ### Quiz 11: ## Section 13 Quiz
