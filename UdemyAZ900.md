@@ -150,6 +150,8 @@ Links:
             - [ARM - Azure Resource Manager](#arm---azure-resource-manager)
             - [ARM templates samples](#arm-templates-samples)
         - [LIVE DEMO: Generate ARM Templates in the Azure Portal [73]](#live-demo-generate-arm-templates-in-the-azure-portal-73)
+            - [way: script template + parameters](#way-script-template--parameters)
+            - [nd way : template library: template specs](#nd-way--template-library-template-specs)
         - [Quiz 10: ## Section 12 Quiz](#quiz-10--section-12-quiz)
     - [Section 13: AZ-900 - Monitoring Tools](#section-13-az-900---monitoring-tools)
         - [Azure Advisor and Azure Service Health [74]](#azure-advisor-and-azure-service-health-74)
@@ -2167,6 +2169,36 @@ https://github.com/Azure/azure-quickstart-templates/blob/master/modules/Microsof
 ```
 
 ### LIVE DEMO: Generate ARM Templates in the Azure Portal [73]
+
+- Create... x
+- "Download a template for automation"
+- Template Parameters Scripts
+- template parameters - parameters tab
+
+```json
+"resources" : [
+  {
+    "name": "oarameters['storageAccountName']",
+    ...
+  }
+]
+```
+
+While create the resource:
+
+#### 1 way: script template + parameters
+
+- Deploy repeatedly - write script in PowerShell
+- storageAccount1, storageAccountName2, storageAccountName3
+
+#### 2nd way : template library: template specs
+
+- Script - "Add to library" - Importing template
+- It'll create a resource called **Template spec**
+- Description, Resource Group, Version Number, Metadata
+- Say: "Deploy", parameters are BLANC!
+- You need to reenter or upload the parameters into this template
+
 ### Quiz 10: ## Section 12 Quiz
 ## Section 13: AZ-900 - Monitoring Tools
 ### Azure Advisor and Azure Service Health [74]
