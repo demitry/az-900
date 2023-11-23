@@ -2200,6 +2200,32 @@ While create the resource:
 - You need to reenter or upload the parameters into this template
 
 ### Quiz 10: ## Section 12 Quiz
+
+
+#### Question 1:
+An Azure administrator plans to run a script to create virtual machines. Which method is not available to run the scripts directly?
+- Running Cmd (NOT SUPPORTED)
+Good job!
+With Azure Cloud Shell, you can run scripts using Bash or PowerShell.
+
+BUT NOT CMD Windows Command line!
+
+
+#### Question 2:
+Which Azure service can you use to manage on-premises and multi-cloud servers as Azure resources?
+- Azure Arc
+success alert
+Good job!
+
+Azure Arc simplifies governance and management by delivering a consistent multi-cloud and on-premises management platform. Azure Arc allows you to manage resources outside of Azure, including servers, Kubernetes clusters, Azure data services on-premises, SQL servers and VMs. Reference: https://learn.microsoft.com/en-us/azure/azure-arc/overview
+
+
+#### Question 3:
+What file format do Azure Resource Manager (ARM) templates use?
+- JSON 
+Good job!
+The Azure ARM templates are an infrastructure-as-code approach for your Azure deployment using JavaScript Object Notation (JSON) definition, which defines the infrastructure and configuration for your project. Reference: https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview
+
 ## Section 13: AZ-900 - Monitoring Tools
 ### Azure Advisor and Azure Service Health [74]
 ### Azure Diagnostics Settings [75]
