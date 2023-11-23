@@ -2269,6 +2269,46 @@ https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-performance-re
 - History: historical issues, past 24 hours, 7 days
 
 ### Azure Diagnostics Settings [75]
+
+Monitor - Monitor all resources in 1 location
+- Alerts
+- Alert rule 0.10 $ per rule
+
+- Diagnostics settings
+- Add diagnostics settings
+
+For storage account:
+- Logs: 
+  - StorageReads
+  - StorageWrite
+  - StorageDelete
+- Metrics:
+  - Transactions
+
+Destination details:
+- Send to Log Analytics workspace - special storage account in azure, collect data rfom different types of resources
+- Archive to a storage account - create log st. account and write there
+- Stream to an event hub
+- Send to partner solution 
+
+Save 
+
+Monitoring 
+
+and
+
+Monitoring (classics) - not the same
+- App Servicess - Always a diagnistic settings
+- Different settings
+  - AppServiceHTTPLogs
+  - AppServiceConsoleLogs
+  - AppService AppLogs
+  - AppServiceAuditLogs
+  - AppServiceIPSecAuditLogs
+  - AppServicePlatformLogs
+
+VMs, SQL Servers - different logs
+
 ### Azure Monitor [76]
 ### Quiz 11: ## Section 13 Quiz
 ## Section 14: 50 QUESTION PRACTICE TEST
