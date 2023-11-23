@@ -162,6 +162,9 @@ Links:
             - [Azure Service Health](#azure-service-health)
         - [Azure Diagnostics Settings [75]](#azure-diagnostics-settings-75)
         - [Azure Monitor [76]](#azure-monitor-76)
+            - [Log Analytics](#log-analytics)
+            - [Kusto Query Language KQL](#kusto-query-language-kql)
+            - [Monitor | Logs](#monitor--logs)
         - [Quiz 11: ## Section 13 Quiz](#quiz-11--section-13-quiz)
     - [Section 14: 50 QUESTION PRACTICE TEST](#section-14-50-question-practice-test)
         - [Practice Test 1: 50 QUESTION PRACTICE TEST](#practice-test-1-50-question-practice-test)
@@ -2310,6 +2313,79 @@ Monitoring (classics) - not the same
 VMs, SQL Servers - different logs
 
 ### Azure Monitor [76]
+
+Monitor (Insights)| Storage accounts
+
+E2E Latency
+
+Running queries against this info
+
+Monitor | Logs
+
+#### Log Analytics
+
+Create a log analytics workspace 
+
+https://learn.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal
+
+https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-ingestion-time
+
+#### Kusto Query Language (KQL)
+
+Kusto Query Language (KQL) is a powerful tool to explore your data and discover patterns, identify anomalies and outliers, create statistical modeling, and more. The query uses schema entities that are organized in a hierarchy similar to SQLs: databases, tables, and columns.
+
+This article provides an explanation of the query language and offers practical exercises to get you started writing queries. To access the query environment, use the Azure Data Explorer web UI. To learn how to use KQL, see Tutorial: Learn common operators.
+
+
+
+Kusto Query Language (KQL) overview
+
+https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/
+
+```
+Heartbeat
+| where TimeGenerated > ago(8h) 
+| extend E2EIngestionLatency = ingestion_time() - TimeGenerated 
+| extend AgentLatency = _TimeReceived - TimeGenerated 
+| summarize percentiles(E2EIngestionLatency,50,95), percentiles(AgentLatency,50,95) by Computer 
+| top 20 by percentile_E2EIngestionLatency_95 desc
+```
+
+https://dataexplorer.azure.com/clusters/help/databases/Samples
+
+```
+StormEvents 
+| where StartTime between (datetime(2007-11-01) .. datetime(2007-12-01))
+| where State == "FLORIDA"  
+| count
+```
+```
+28
+```
+
+```
+StormEvents 
+| where StartTime between (datetime(2007-11-01) .. datetime(2007-12-01))
+| where State == "FLORIDA"  
+```
+```
+2007-11-01T00:00:00Z	2007-11-30T23:59:00Z	12107	66178	FLORIDA	Drought	0	0	0	0
+2007-11-01T00:00:00Z	2007-11-30T23:59:00Z	12107	66179	FLORIDA	Drought	0	0	0	0
+2007-11-01T00:00:00Z	2007-11-01T10:00:00Z	12091	66160	FLORIDA	Tropical Depression	0	0	0	0
+```
+
+#### Monitor | Logs
+
+Monitor | Logs  -  Centralized location for quering,
+
+- A lot of pre-built
+- A lot of pre-built options for quering, 
+- activities, time, sources
+
+- Create an empty workbook, 
+- create sets of reports, 
+- share Azure workbooks, Gallery 
+
 ### Quiz 11: ## Section 13 Quiz
 ## Section 14: 50 QUESTION PRACTICE TEST
 ### Practice Test 1: 50 QUESTION PRACTICE TEST
