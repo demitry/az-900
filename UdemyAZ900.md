@@ -2387,6 +2387,35 @@ Monitor | Logs  -  Centralized location for quering,
 - share Azure workbooks, Gallery 
 
 ### Quiz 11: ## Section 13 Quiz
+
+Question 1:
+
+Azure Advisor evaluates your Azure resources and makes recommendations. Which of the below recommendations can’t be found in the Advisor dashboard?
+- CANNOT HELP with - Recommendations how to configure network
+
+Good job!
+
+The Azure Advisor will analyze your use of Azure and make you specific recommendations based on your usage across reliability (formerly called availability, security, performance, cost and operational excellence categories. Reference: https://learn.microsoft.com/en-us/azure/advisor/advisor-overview
+
+Question 2:
+
+Which of below Azure service is a customizable dashboard tool that allows you to track the health of your Azure services in regions where they are used?
+
+ - Azure Service Health
+
+Good job!
+
+Azure Service Health allows you keep track of Azure resource, both your specifically deployed resources and the overall status of Azure. Azure Service Health is composed of Azure status, the service health service, and Resource Health. Reference: https://azure.microsoft.com/en-au/get-started/azure-portal/service-health/#overview
+
+Question 3:
+
+Which of the following statements is incorrect about Azure Monitor?
+- "You cannot monitor the performance of VM" - it is not true
+
+Good job!
+
+Azure Monitor is a comprehensive monitoring solution for Azure services that includes several monitoring tools and services. You can use Azure Monitor to monitor applications, VMs, containers, DB, security or networking events in Azure, other clouds, or on-premises. Reference: https://learn.microsoft.com/en-us/azure/azure-monitor/overview
+
 ## Section 14: 50 QUESTION PRACTICE TEST
 ### Practice Test 1: 50 QUESTION PRACTICE TEST
 ## Section 15: AZ-900 - Course Wrapup
