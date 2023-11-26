@@ -1,0 +1,16 @@
+I just took this certification and passed, BUT the actual exam questions are VERY different and substantially "harder" (...hard is relative. :) ) than the practice exams provided. Maybe it's just the nature of the exam, but...
+
+The questions on the REAL exam include (1) drop down list sentence completion, (2) "sets" of topical true false questions and drag/drop term matching. Also, they definitely try to use a more trickery in their question construction and wording.
+
+I felt like I was taking an entirely different test at times. If your goal was to make the exam familiar and me more comfortable, I'm afraid you missed the mark.
+
+If you haven't taken the actual exam recently, it might be instructive for you so that you can author more similar/realistic questions for future students.
+
+IMPORTANT DISCLAIMER
+
+I'm not saying I didn't get value from this, because I did. However, I was disappointed when comparing it to my pervious Udemy experience. My intent here is not be be mean, but vert honest.
+
+----
+
+quality of questions is not up to the mark. The answer Explanation is also relatively brief. Please check courses related to question papers of AWS cloud practitioners in Udemy, you will see the difference in quality.
+
